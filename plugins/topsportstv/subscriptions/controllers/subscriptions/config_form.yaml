@@ -1,0 +1,10 @@
+name: Subscriptions
+form: $/topsportstv/subscriptions/models/subscription/fields.yaml
+modelClass: TopSportsTv\Subscriptions\Models\Subscription
+defaultRedirect: topsportstv/subscriptions/subscriptions
+create:
+    redirect: 'topsportstv/subscriptions/subscriptions/update/:id'
+    redirectClose: topsportstv/subscriptions/subscriptions
+update:
+    redirect: topsportstv/subscriptions/subscriptions
+    redirectClose: topsportstv/subscriptions/subscriptions

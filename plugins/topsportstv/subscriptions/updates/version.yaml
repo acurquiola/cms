@@ -1,0 +1,26 @@
+1.0.1:
+    - 'Initialize plugin.'
+1.0.2:
+    - 'Created table topsportstv_subscriptions_'
+    - builder_table_create_topsportstv_subscriptions_.php
+1.0.3:
+    - 'Drop table topsportstv_subscriptions_users'
+    - builder_table_delete_topsportstv_subscriptions_users.php
+1.0.4:
+    - 'Drop table topsportstv_subscriptions_subscriptions_users'
+    - builder_table_delete_topsportstv_subscriptions_subscriptions_users.php
+1.0.5:
+    - 'Created table topsportstv_subscriptions_pagos'
+    - builder_table_create_topsportstv_subscriptions_pagos.php
+1.0.6:
+    - 'Updated table topsportstv_subscriptions_pagos'
+    - builder_table_update_topsportstv_subscriptions_pagos.php
+1.0.7:
+    - 'Updated table topsportstv_subscriptions_pagos'
+    - builder_table_update_topsportstv_subscriptions_pagos_2.php
+1.0.8:
+    - 'Updated table topsportstv_subscriptions_pagos'
+    - builder_table_update_topsportstv_subscriptions_pagos_3.php
+1.0.9:
+    - 'Updated table topsportstv_subscriptions_pagos'
+    - builder_table_update_topsportstv_subscriptions_pagos_4.php

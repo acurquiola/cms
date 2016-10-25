@@ -1,0 +1,10 @@
+name: Pagos
+form: $/topsportstv/subscriptions/models/pago/fields.yaml
+modelClass: TopSportsTv\Subscriptions\Models\Pago
+defaultRedirect: topsportstv/subscriptions/pagos
+create:
+    redirect: 'topsportstv/subscriptions/pagos/update/:id'
+    redirectClose: topsportstv/subscriptions/pagos
+update:
+    redirect: topsportstv/subscriptions/pagos
+    redirectClose: topsportstv/subscriptions/pagos

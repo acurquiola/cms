@@ -1,0 +1,15 @@
+plugin:
+    name: 'topsportstv.subscriptions::lang.plugin.name'
+    description: 'topsportstv.subscriptions::lang.plugin.description'
+    author: TopSportsTv
+    icon: oc-icon-ticket
+    homepage: ''
+navigation:
+    main-menu-item:
+        label: Planes
+        url: topsportstv/subscriptions/subscriptions
+        icon: icon-ticket
+    gestionPagos:
+        label: 'Gestión de Pagos'
+        url: topsportstv/subscriptions/pagos
+        icon: icon-credit-card

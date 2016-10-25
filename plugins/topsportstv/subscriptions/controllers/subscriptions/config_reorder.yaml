@@ -1,0 +1,4 @@
+title: Subscriptions
+modelClass: TopSportsTv\Subscriptions\Models\Subscription
+toolbar:
+    buttons: reorder_toolbar

@@ -1,0 +1,21 @@
+fields:
+    nombre:
+        label: Nombre
+        oc.commentPosition: ''
+        span: auto
+        placeholder: 'Nombre del Plan'
+        required: 1
+        type: text
+    precio:
+        label: Precio
+        oc.commentPosition: ''
+        span: auto
+        placeholder: 'Precio del Plan'
+        type: number
+    descripcion:
+        label: Descripción
+        span: full
+        size: small
+        oc.commentPosition: ''
+        placeholder: 'Descripción del Plan'
+        type: textarea

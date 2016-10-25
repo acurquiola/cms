@@ -1,0 +1,14 @@
+columns:
+    nombre:
+        label: Plan
+        type: text
+        searchable: true
+        sortable: true
+    descripcion:
+        label: Descripción
+        type: text
+    precio:
+        label: Precio
+        type: number
+        searchable: true
+        sortable: true

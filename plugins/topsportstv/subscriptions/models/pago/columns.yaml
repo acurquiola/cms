@@ -1,0 +1,29 @@
+columns:
+    users_id:
+        label: Usuario
+        type: text
+        searchable: true
+        sortable: true
+        select: email
+        relation: users
+    subscriptions_id:
+        label: Plan
+        type: text
+        searchable: true
+        sortable: true
+        select: nombre
+        relation: subscriptions
+    fecha:
+        label: 'Fecha de Pago'
+        type: date
+        searchable: true
+        sortable: true
+    metodo_pago:
+        label: Método
+        type: text
+        searchable: true
+        sortable: false
+    monto:
+        label: Monto
+        type: number
+        sortable: true

@@ -1,0 +1,24 @@
+{
+  "name": "cms",
+  "version": "1.0.0",
+  "description": "The wizard installation is a recommended way to install October. It is simpler than the command-line installation and doesn't require any special skills.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://anitau28@bitbucket.org/gonzaloestevez/cms.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/gonzaloestevez/cms#readme",
+  "dependencies": {
+    "laravel-elixir-livereload": "^1.1.6",
+    "laravel-elixir": "^5.0.0"
+  },
+  "devDependencies": {
+    "laravel-elixir": "^5.0.0",
+    "laravel-elixir-livereload": "^1.1.6"
+  }
+}

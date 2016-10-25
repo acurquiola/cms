@@ -1,0 +1,41 @@
+fields:
+    users:
+        label: Usuario
+        oc.commentPosition: ''
+        nameFrom: username
+        descriptionFrom: description
+        span: auto
+        required: 1
+        type: relation
+    subscriptions:
+        label: Plan
+        oc.commentPosition: ''
+        nameFrom: nombre
+        descriptionFrom: description
+        span: auto
+        required: 1
+        type: relation
+    fecha:
+        label: 'Fecha de Pago'
+        oc.commentPosition: ''
+        mode: date
+        span: auto
+        placeholder: ''
+        required: 1
+        type: datepicker
+    monto:
+        label: Monto
+        oc.commentPosition: ''
+        span: auto
+        required: 1
+        type: number
+    metodo_pago:
+        label: 'Método de Pago'
+        oc.commentPosition: ''
+        options:
+            transferencia: Transferencia
+            depósito: Depósito
+            paypal: Paypal
+        span: auto
+        required: 1
+        type: radio

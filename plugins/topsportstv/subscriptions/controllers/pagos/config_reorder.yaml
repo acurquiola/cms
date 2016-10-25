@@ -1,0 +1,4 @@
+title: Pagos
+modelClass: TopSportsTv\Subscriptions\Models\Pago
+toolbar:
+    buttons: reorder_toolbar
