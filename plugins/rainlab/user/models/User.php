@@ -313,11 +313,4 @@ class User extends UserBase
     {
         return $this->last_seen ?: $this->created_at;
     }
-
-    public $hasMany = [
-        'pagos' => [
-            'TopSportsTv\Subscriptions\Models\Pago',
-            'table' => 'topsportstv_subscriptions_pagos'
-        ]
-    ];
 }

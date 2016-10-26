@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'debug' => true,
+    'debug' => env('APP_DEBUG', true),
 
     /*
     |--------------------------------------------------------------------------
@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'url' => 'http://localhost/cms/',
+    'url' => env('APP_URL', 'http://localhost/cms/'),
 
     /*
     |--------------------------------------------------------------------------
@@ -81,7 +81,7 @@ return [
     |
     */
 
-    'key' => 'L6Jq9yLYc5LvtYmhUJv4gT7TH9a6WoGZ',
+    'key' => env('APP_KEY', 'L6Jq9yLYc5LvtYmhUJv4gT7TH9a6WoGZ'),
 
     'cipher' => 'AES-256-CBC',
 
