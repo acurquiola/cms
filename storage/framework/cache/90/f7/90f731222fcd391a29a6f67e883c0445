@@ -1,0 +1,31 @@
+1477985731a:1:{s:7:"nav.htm";a:5:{s:8:"fileName";s:7:"nav.htm";s:7:"content";s:532:"<nav class="cyan accent-4">
+	<div class="container">
+		<div class="nav-wrapper">
+			<a href="#" class="brand-logo">Streaming Sports</a>
+			
+
+			<ul id="nav-mobile" class="side-bar right">
+				<li class="{% if this.page.id == 'home' %} active {% endif %}"><a href="{{ 'home'|page }}">Home</a></li>
+				<li class="{% if this.page.id == 'planes' %} active {% endif %}"><a href="{{ 'planes'|page }}">Planes</a></li>
+			</ul>
+
+			<!-- <a href="#" data-activates="nav-mobile" class="buttom-collapse">Menú</a> -->
+
+		</div>
+	</div>
+</nav>";s:5:"mtime";i:1477441111;s:6:"markup";s:532:"<nav class="cyan accent-4">
+	<div class="container">
+		<div class="nav-wrapper">
+			<a href="#" class="brand-logo">Streaming Sports</a>
+			
+
+			<ul id="nav-mobile" class="side-bar right">
+				<li class="{% if this.page.id == 'home' %} active {% endif %}"><a href="{{ 'home'|page }}">Home</a></li>
+				<li class="{% if this.page.id == 'planes' %} active {% endif %}"><a href="{{ 'planes'|page }}">Planes</a></li>
+			</ul>
+
+			<!-- <a href="#" data-activates="nav-mobile" class="buttom-collapse">Menú</a> -->
+
+		</div>
+	</div>
+</nav>";s:4:"code";N;}}
