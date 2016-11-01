@@ -11,7 +11,7 @@ return [
     |
     */
 
-    'activeTheme' => 'responsiv-flat',
+    'activeTheme' => 'topsportstv',
 
     /*
     |--------------------------------------------------------------------------

@@ -1,11 +1,13 @@
+==
 <nav class="cyan accent-4">
 	<div class="container">
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo">Streaming Sports</a>
+			<a href="{{ 'home'|page }}" class="brand-logo">Streaming Sports</a>
 			
 
 			<ul id="nav-mobile" class="side-bar right">
 				<li class="{% if this.page.id == 'home' %} active {% endif %}"><a href="{{ 'home'|page }}">Home</a></li>
+				<li class="{% if this.page.id == 'blog' %} active {% endif %}"><a href="{{ 'blog'|page }}">Noticias</a></li>
 				<li class="{% if this.page.id == 'planes' %} active {% endif %}"><a href="{{ 'planes'|page }}">Planes</a></li>
 			</ul>
 

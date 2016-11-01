@@ -1,11 +1,13 @@
-1477440960a:1:{s:7:"nav.htm";a:5:{s:8:"fileName";s:7:"nav.htm";s:7:"content";s:547:"<nav class="cyan accent-4">
+1477985038a:1:{s:7:"nav.htm";a:6:{s:8:"fileName";s:7:"nav.htm";s:7:"content";s:681:"==
+<nav class="cyan accent-4">
 	<div class="container">
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo">Streaming Sports</a>
+			<a href="{{ 'home'|page }}" class="brand-logo">Streaming Sports</a>
 			
 
 			<ul id="nav-mobile" class="side-bar right">
 				<li class="{% if this.page.id == 'home' %} active {% endif %}"><a href="{{ 'home'|page }}">Home</a></li>
+				<li class="{% if this.page.id == 'blog' %} active {% endif %}"><a href="{{ 'blog'|page }}">Noticias</a></li>
 				<li class="{% if this.page.id == 'planes' %} active {% endif %}"><a href="{{ 'planes'|page }}">Planes</a></li>
 			</ul>
 
@@ -13,14 +15,15 @@
 
 		</div>
 	</div>
-</nav>";s:5:"mtime";i:1477090812;s:6:"markup";s:547:"<nav class="cyan accent-4">
+</nav>";s:5:"mtime";i:1477984432;s:6:"markup";s:677:"<nav class="cyan accent-4">
 	<div class="container">
 		<div class="nav-wrapper">
-			<a href="#" class="brand-logo">Streaming Sports</a>
+			<a href="{{ 'home'|page }}" class="brand-logo">Streaming Sports</a>
 			
 
 			<ul id="nav-mobile" class="side-bar right">
 				<li class="{% if this.page.id == 'home' %} active {% endif %}"><a href="{{ 'home'|page }}">Home</a></li>
+				<li class="{% if this.page.id == 'blog' %} active {% endif %}"><a href="{{ 'blog'|page }}">Noticias</a></li>
 				<li class="{% if this.page.id == 'planes' %} active {% endif %}"><a href="{{ 'planes'|page }}">Planes</a></li>
 			</ul>
 
@@ -28,4 +31,4 @@
 
 		</div>
 	</div>
-</nav>";s:4:"code";N;}}
+</nav>";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}

@@ -1,0 +1,28 @@
+1477981538a:1:{s:13:"blog/post.htm";a:11:{s:8:"fileName";s:13:"blog/post.htm";s:7:"content";s:445:"title = "Blog Post"
+url = "/blog/post/:slug"
+layout = "default"
+is_hidden = 0
+
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = "blog/categorias"
+
+[PostBreadCrumbs]
+categoryPage = "blog/categorias"
+postSlug = "{{ :slug }}"
+==
+<?php
+function onEnd()
+{
+    $this->page->title = $this['post']->title;
+}
+?>
+==
+{% component 'PostBreadCrumbs' %}
+<h3 class="blue-text text-blue">{{ this.page.title }}</h3>
+{% component 'blogPost' %}";s:5:"mtime";i:1477979766;s:6:"markup";s:121:"{% component 'PostBreadCrumbs' %}
+<h3 class="blue-text text-blue">{{ this.page.title }}</h3>
+{% component 'blogPost' %}";s:4:"code";s:70:"function onEnd()
+{
+    $this->page->title = $this['post']->title;
+}";s:5:"title";s:9:"Blog Post";s:3:"url";s:16:"/blog/post/:slug";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:8:"blogPost";a:2:{s:4:"slug";s:11:"{{ :slug }}";s:12:"categoryPage";s:15:"blog/categorias";}s:15:"PostBreadCrumbs";a:2:{s:12:"categoryPage";s:15:"blog/categorias";s:8:"postSlug";s:11:"{{ :slug }}";}}}
