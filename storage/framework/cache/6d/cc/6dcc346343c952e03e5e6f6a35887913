@@ -1,4 +1,8 @@
+<<<<<<< HEAD:storage/framework/cache/6d/cc/6dcc346343c952e03e5e6f6a35887913
 1477985728a:1:{s:11:"default.htm";a:6:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:1280:"description = "Default layout"
+=======
+1477984772a:1:{s:11:"default.htm";a:6:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:1448:"description = "Default layout"
+>>>>>>> 673a19173954459d26937c5b62a1ab36e1c180cc:storage/framework/cache/9b/bb/9bbb6087b9fe7873e04659fc3a69a682
 ==
 <!DOCTYPE html>
 <html>
@@ -24,7 +28,11 @@
 
         <!-- Content -->
         <main >
-            {% page %}
+            <div class="section" >
+                <div class="container" >
+                    {% page %}
+                </div>
+            </div>
         </main>
         
             {%partial 'footer' %}
@@ -37,8 +45,12 @@
         {% scripts %}
 
     </body>
+<<<<<<< HEAD:storage/framework/cache/6d/cc/6dcc346343c952e03e5e6f6a35887913
 </html>
 ";s:5:"mtime";i:1477441111;s:6:"markup";s:1245:"<!DOCTYPE html>
+=======
+</html>";s:5:"mtime";i:1477977613;s:6:"markup";s:1412:"<!DOCTYPE html>
+>>>>>>> 673a19173954459d26937c5b62a1ab36e1c180cc:storage/framework/cache/9b/bb/9bbb6087b9fe7873e04659fc3a69a682
 <html>
     <head>
         <meta charset="utf-8">
@@ -62,7 +74,11 @@
 
         <!-- Content -->
         <main >
-            {% page %}
+            <div class="section" >
+                <div class="container" >
+                    {% page %}
+                </div>
+            </div>
         </main>
         
             {%partial 'footer' %}

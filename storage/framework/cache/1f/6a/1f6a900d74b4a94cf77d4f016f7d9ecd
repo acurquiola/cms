@@ -1,4 +1,8 @@
+<<<<<<< HEAD:storage/framework/cache/1f/6a/1f6a900d74b4a94cf77d4f016f7d9ecd
 1477985731a:1:{s:10:"footer.htm";a:6:{s:8:"fileName";s:10:"footer.htm";s:7:"content";s:420:"==
+=======
+1477984773a:1:{s:10:"footer.htm";a:6:{s:8:"fileName";s:10:"footer.htm";s:7:"content";s:436:"==
+>>>>>>> 673a19173954459d26937c5b62a1ab36e1c180cc:storage/framework/cache/99/d5/99d532969af80cb785041ff40a10a28b
 <footer class="page-footer blue-grey lighten-2">
 	<div class="container ">
 		<div class="row">
