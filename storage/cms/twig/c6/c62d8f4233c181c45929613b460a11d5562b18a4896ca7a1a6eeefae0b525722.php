@@ -51,7 +51,7 @@ class __TwigTemplate_0b3a1d6798ae04091a4f51d87a43e99bb6411400d1d9bad3fd84b7e0f8a
     <body>
 
 
-            ";
+        ";
         // line 21
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('CMS')->partialFunction("nav"        , $context['__cms_partial_params']        );
@@ -60,49 +60,45 @@ class __TwigTemplate_0b3a1d6798ae04091a4f51d87a43e99bb6411400d1d9bad3fd84b7e0f8a
         echo "
         <!-- Content -->
         <main >
-            <div class=\"section\" >
-                <div class=\"container\" >
-                    ";
-        // line 27
+            ";
+        // line 25
         echo $this->env->getExtension('CMS')->pageFunction();
-        // line 28
-        echo "                </div>
-            </div>
-        </main>
+        // line 26
+        echo "        </main>
         
             ";
-        // line 32
+        // line 28
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('CMS')->partialFunction("footer"        , $context['__cms_partial_params']        );
         unset($context['__cms_partial_params']);
-        // line 33
+        // line 29
         echo "
         <!-- Scripts -->
         <script src=\"";
-        // line 35
+        // line 31
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/js/jquery.js");
         echo "\"></script>
         <script src=\"";
-        // line 36
+        // line 32
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/js/materialize/js/materialize.min.js");
         echo "\"></script>
         <script src=\"";
-        // line 37
+        // line 33
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/js/app.js");
         echo "\"></script>
         ";
-        // line 38
+        // line 34
         echo '<script src="'. Request::getBasePath()
                 .'/modules/system/assets/js/framework.js"></script>'.PHP_EOL;
         echo '<script src="'. Request::getBasePath()
                     .'/modules/system/assets/js/framework.extras.js"></script>'.PHP_EOL;
         echo '<link rel="stylesheet" property="stylesheet" href="'. Request::getBasePath()
                     .'/modules/system/assets/css/framework.extras.css">'.PHP_EOL;
-        // line 39
+        // line 35
         echo "        ";
         echo $this->env->getExtension('CMS')->assetsFunction('js');
         echo $this->env->getExtension('CMS')->displayBlock('scripts');
-        // line 40
+        // line 36
         echo "
     </body>
 </html>";
@@ -120,7 +116,7 @@ class __TwigTemplate_0b3a1d6798ae04091a4f51d87a43e99bb6411400d1d9bad3fd84b7e0f8a
 
     public function getDebugInfo()
     {
-        return array (  106 => 40,  102 => 39,  95 => 38,  91 => 37,  87 => 36,  83 => 35,  79 => 33,  75 => 32,  69 => 28,  67 => 27,  60 => 22,  56 => 21,  50 => 17,  47 => 16,  42 => 13,  40 => 11,  33 => 7,  29 => 6,  25 => 5,  19 => 1,);
+        return array (  102 => 36,  98 => 35,  91 => 34,  87 => 33,  83 => 32,  79 => 31,  75 => 29,  71 => 28,  67 => 26,  65 => 25,  60 => 22,  56 => 21,  50 => 17,  47 => 16,  42 => 13,  40 => 11,  33 => 7,  29 => 6,  25 => 5,  19 => 1,);
     }
 
     public function getSource()
@@ -145,15 +141,11 @@ class __TwigTemplate_0b3a1d6798ae04091a4f51d87a43e99bb6411400d1d9bad3fd84b7e0f8a
     <body>
 
 
-            {% partial 'nav' %}
+        {% partial 'nav' %}
 
         <!-- Content -->
         <main >
-            <div class=\"section\" >
-                <div class=\"container\" >
-                    {% page %}
-                </div>
-            </div>
+            {% page %}
         </main>
         
             {%partial 'footer' %}

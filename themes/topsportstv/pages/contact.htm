@@ -1,0 +1,22 @@
+title = "Contact"
+url = "/contact"
+layout = "default"
+is_hidden = 0
+
+[simpleContact]
+nameTitle = "Nombre"
+emailTitle = "Email"
+phoneTitle = "Phone"
+subjectTitle = "Asunto"
+messageTitle = "Mensaje"
+buttonText = "Enviar"
+displayPhone = 0
+
+[session]
+security = "all"
+==
+<div class="container">
+    <div class="section">
+        {% component 'simpleContact' %}
+    </div>
+</div>

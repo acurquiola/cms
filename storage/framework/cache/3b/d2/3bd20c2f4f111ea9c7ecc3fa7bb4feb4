@@ -1,4 +1,4 @@
-1477984772a:1:{s:10:"planes.htm";a:10:{s:8:"fileName";s:10:"planes.htm";s:7:"content";s:2555:"title = "planes"
+1478491774a:1:{s:10:"planes.htm";a:11:{s:8:"fileName";s:10:"planes.htm";s:7:"content";s:2586:"title = "planes"
 url = "/planes"
 layout = "default"
 is_hidden = 0
@@ -11,6 +11,9 @@ noRecordsMessage = "No records found"
 detailsPage = "-"
 detailsUrlParameter = "id"
 pageNumber = "{{ :page }}"
+
+[session]
+security = "all"
 ==
 <div class="section" >
     <div class="container" >
@@ -68,7 +71,7 @@ pageNumber = "{{ :page }}"
             </ul>
         {% endif %}
     </div>
-</div>";s:5:"mtime";i:1477266321;s:6:"markup";s:2249:"<div class="section" >
+</div>";s:5:"mtime";i:1478484265;s:6:"markup";s:2249:"<div class="section" >
     <div class="container" >
         {% content "planes.md" %}
         
@@ -124,4 +127,4 @@ pageNumber = "{{ :page }}"
             </ul>
         {% endif %}
     </div>
-</div>";s:4:"code";N;s:5:"title";s:6:"planes";s:3:"url";s:7:"/planes";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:11:"builderList";a:7:{s:10:"modelClass";s:45:"TopSportsTv\Subscriptions\Models\Subscription";s:5:"scope";s:1:"-";s:13:"displayColumn";s:6:"nombre";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}}}
+</div>";s:4:"code";N;s:5:"title";s:6:"planes";s:3:"url";s:7:"/planes";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:11:"builderList";a:7:{s:10:"modelClass";s:45:"TopSportsTv\Subscriptions\Models\Subscription";s:5:"scope";s:1:"-";s:13:"displayColumn";s:6:"nombre";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:1:"-";s:19:"detailsUrlParameter";s:2:"id";s:10:"pageNumber";s:11:"{{ :page }}";}s:7:"session";a:1:{s:8:"security";s:3:"all";}}}

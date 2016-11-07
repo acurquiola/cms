@@ -2,5 +2,10 @@ title = "home"
 url = "/"
 layout = "default"
 is_hidden = 0
+
+[session]
+security = "all"
 ==
-{% content 'home.md' %}
+{% partial 'home/carousel' %}
+
+{% partial 'home/secciones' %}

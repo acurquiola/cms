@@ -16,9 +16,16 @@ class __TwigTemplate_d59f206bff69670440c1fcb4c24eee691d3524e506885322bf62a7fb226
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        $context['__cms_content_params'] = [];
-        echo $this->env->getExtension('CMS')->contentFunction("home.md"        , $context['__cms_content_params']        );
-        unset($context['__cms_content_params']);
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('CMS')->partialFunction("home/carousel"        , $context['__cms_partial_params']        );
+        unset($context['__cms_partial_params']);
+        // line 2
+        echo "
+";
+        // line 3
+        $context['__cms_partial_params'] = [];
+        echo $this->env->getExtension('CMS')->partialFunction("home/secciones"        , $context['__cms_partial_params']        );
+        unset($context['__cms_partial_params']);
     }
 
     public function getTemplateName()
@@ -33,11 +40,13 @@ class __TwigTemplate_d59f206bff69670440c1fcb4c24eee691d3524e506885322bf62a7fb226
 
     public function getDebugInfo()
     {
-        return array (  19 => 1,);
+        return array (  26 => 3,  23 => 2,  19 => 1,);
     }
 
     public function getSource()
     {
-        return "{% content 'home.md' %}";
+        return "{% partial 'home/carousel' %}
+
+{% partial 'home/secciones' %}";
     }
 }

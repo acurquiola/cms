@@ -20,15 +20,11 @@ description = "Default layout"
     <body>
 
 
-            {% partial 'nav' %}
+        {% partial 'nav' %}
 
         <!-- Content -->
         <main >
-            <div class="section" >
-                <div class="container" >
-                    {% page %}
-                </div>
-            </div>
+            {% page %}
         </main>
         
             {%partial 'footer' %}
