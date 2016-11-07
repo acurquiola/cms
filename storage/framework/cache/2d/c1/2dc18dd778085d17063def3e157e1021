@@ -1,8 +1,4 @@
-<<<<<<< HEAD:storage/framework/cache/2d/c1/2dc18dd778085d17063def3e157e1021
-1477985728a:1:{s:10:"planes.htm";a:10:{s:8:"fileName";s:10:"planes.htm";s:7:"content";s:2553:"title = "planes"
-=======
-1477984772a:1:{s:10:"planes.htm";a:10:{s:8:"fileName";s:10:"planes.htm";s:7:"content";s:2555:"title = "planes"
->>>>>>> 673a19173954459d26937c5b62a1ab36e1c180cc:storage/framework/cache/3b/d2/3bd20c2f4f111ea9c7ecc3fa7bb4feb4
+1478492169a:1:{s:10:"planes.htm";a:10:{s:8:"fileName";s:10:"planes.htm";s:7:"content";s:2553:"title = "planes"
 url = "/planes"
 layout = "default"
 is_hidden = 0

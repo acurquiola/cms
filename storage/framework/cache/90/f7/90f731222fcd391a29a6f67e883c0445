@@ -1,9 +1,5 @@
-<<<<<<< HEAD:storage/framework/cache/90/f7/90f731222fcd391a29a6f67e883c0445
-1477985731a:1:{s:7:"nav.htm";a:5:{s:8:"fileName";s:7:"nav.htm";s:7:"content";s:532:"<nav class="cyan accent-4">
-=======
-1477985038a:1:{s:7:"nav.htm";a:6:{s:8:"fileName";s:7:"nav.htm";s:7:"content";s:681:"==
+1478492171a:1:{s:7:"nav.htm";a:6:{s:8:"fileName";s:7:"nav.htm";s:7:"content";s:664:"==
 <nav class="cyan accent-4">
->>>>>>> 673a19173954459d26937c5b62a1ab36e1c180cc:storage/framework/cache/c1/f5/c1f51e249df084846b76c8054f7079af
 	<div class="container">
 		<div class="nav-wrapper">
 			<a href="{{ 'home'|page }}" class="brand-logo">Streaming Sports</a>
@@ -19,11 +15,7 @@
 
 		</div>
 	</div>
-<<<<<<< HEAD:storage/framework/cache/90/f7/90f731222fcd391a29a6f67e883c0445
-</nav>";s:5:"mtime";i:1477441111;s:6:"markup";s:532:"<nav class="cyan accent-4">
-=======
-</nav>";s:5:"mtime";i:1477984432;s:6:"markup";s:677:"<nav class="cyan accent-4">
->>>>>>> 673a19173954459d26937c5b62a1ab36e1c180cc:storage/framework/cache/c1/f5/c1f51e249df084846b76c8054f7079af
+</nav>";s:5:"mtime";i:1477985541;s:6:"markup";s:661:"<nav class="cyan accent-4">
 	<div class="container">
 		<div class="nav-wrapper">
 			<a href="{{ 'home'|page }}" class="brand-logo">Streaming Sports</a>
