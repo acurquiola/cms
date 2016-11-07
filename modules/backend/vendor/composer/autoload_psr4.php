@@ -8,3 +8,4 @@ $baseDir = dirname($vendorDir);
 return array(
     'Backend\\' => array($baseDir . '/'),
 );
+
