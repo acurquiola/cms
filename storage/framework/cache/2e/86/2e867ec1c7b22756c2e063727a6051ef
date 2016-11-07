@@ -1,4 +1,4 @@
-1478492169a:1:{s:13:"blog/post.htm";a:11:{s:8:"fileName";s:13:"blog/post.htm";s:7:"content";s:423:"title = "Blog Post"
+1478491774a:1:{s:13:"blog/post.htm";a:12:{s:8:"fileName";s:13:"blog/post.htm";s:7:"content";s:496:"title = "Blog Post"
 url = "/blog/post/:slug"
 layout = "default"
 is_hidden = 0
@@ -10,6 +10,10 @@ categoryPage = "blog/categorias"
 [PostBreadCrumbs]
 categoryPage = "blog/categorias"
 postSlug = "{{ :slug }}"
+
+[session]
+security = "user"
+redirect = "home"
 ==
 <?php
 function onEnd()
@@ -20,9 +24,9 @@ function onEnd()
 ==
 {% component 'PostBreadCrumbs' %}
 <h3 class="blue-text text-blue">{{ this.page.title }}</h3>
-{% component 'blogPost' %}";s:5:"mtime";i:1477985541;s:6:"markup";s:119:"{% component 'PostBreadCrumbs' %}
+{% component 'blogPost' %}";s:5:"mtime";i:1478484240;s:6:"markup";s:121:"{% component 'PostBreadCrumbs' %}
 <h3 class="blue-text text-blue">{{ this.page.title }}</h3>
 {% component 'blogPost' %}";s:4:"code";s:67:"function onEnd()
 {
     $this->page->title = $this['post']->title;
-}";s:5:"title";s:9:"Blog Post";s:3:"url";s:16:"/blog/post/:slug";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:8:"blogPost";a:2:{s:4:"slug";s:11:"{{ :slug }}";s:12:"categoryPage";s:15:"blog/categorias";}s:15:"PostBreadCrumbs";a:2:{s:12:"categoryPage";s:15:"blog/categorias";s:8:"postSlug";s:11:"{{ :slug }}";}}}
+}";s:5:"title";s:9:"Blog Post";s:3:"url";s:16:"/blog/post/:slug";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:8:"blogPost";a:2:{s:4:"slug";s:11:"{{ :slug }}";s:12:"categoryPage";s:15:"blog/categorias";}s:15:"PostBreadCrumbs";a:2:{s:12:"categoryPage";s:15:"blog/categorias";s:8:"postSlug";s:11:"{{ :slug }}";}s:7:"session";a:2:{s:8:"security";s:4:"user";s:8:"redirect";s:4:"home";}}}

@@ -1,4 +1,4 @@
-1478492169a:1:{s:10:"planes.htm";a:10:{s:8:"fileName";s:10:"planes.htm";s:7:"content";s:2553:"title = "planes"
+1477984772a:1:{s:10:"planes.htm";a:10:{s:8:"fileName";s:10:"planes.htm";s:7:"content";s:2555:"title = "planes"
 url = "/planes"
 layout = "default"
 is_hidden = 0
@@ -11,6 +11,9 @@ noRecordsMessage = "No hay registros disponibles"
 detailsPage = "-"
 detailsUrlParameter = "id"
 pageNumber = "{{ :page }}"
+
+[session]
+security = "all"
 ==
 <div class="section" >
     <div class="container" >

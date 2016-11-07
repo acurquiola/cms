@@ -1,0 +1,39 @@
+title = "Login"
+url = "/login"
+layout = "default"
+is_hidden = 0
+
+[account]
+redirect = "home"
+paramCode = "code"
+
+[session]
+security = "guest"
+redirect = "home"
+==
+<div class="container" >
+
+    <div class="section" >
+    
+        {% if not user %}
+
+            <div class="row">
+        
+                <div class="col-md-6">
+                    <h4>Iniciar Sesión</h4>
+                    {% partial account ~ '::signin' %}
+                </div>
+   
+            </div>
+        
+        {% else %}
+        
+            {% partial account ~ '::activation_check' %}
+        
+            {% partial account ~ '::update' %}
+        
+            {% partial account ~ '::deactivate_link' %}
+        
+        {% endif %}
+    </div>
+</div>
