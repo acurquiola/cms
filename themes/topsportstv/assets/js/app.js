@@ -1,11 +1,9 @@
 $(document).ready(function(){
-    
-    $('.buttom-collapse').sideNav();
-    $('.carousel.carousel-slider').carousel({full_width: true});
-    window.setInterval(function(){
-        $('.carousel.carousel-slider').carousel('next')
-        },5000
-    )
-
+    $('.dropdown-button').dropdown();
+    $(".button-collapse").sideNav();
+    $('.slider').slider({   
+        indicators: false,
+        interval: 5000
+    });
 });
 

@@ -20,7 +20,10 @@ class __TwigTemplate_3b88eec4cbdfb9ab702b2c9b8929f129fd7650e35d39972e69ec85e8fd9
 \t<div class=\"col s12 m4 l4\">
 \t\t<div class=\"card horizontal  deep-purple lighten-5\">
 \t\t\t<div class=\"card-image\">
-\t\t\t\t<img style=\"width: 150px\" src=\"http://365psd.com/images/previews/643/vintage-tv-icon-psd-image-2344vintage-tv-icon-512x512.png\">
+\t\t\t\t<img style=\"width: 150px\" src=\"";
+        // line 5
+        echo $this->env->getExtension('Cms\Twig\Extension')->mediaFilter("Homepage/secciones/partidos-online.png");
+        echo "\">
 \t\t\t</div>
 \t\t\t<div class=\"card-stacked\">
             \t<span class=\"card-title\"> Partidos Online</span>
@@ -36,7 +39,10 @@ class __TwigTemplate_3b88eec4cbdfb9ab702b2c9b8929f129fd7650e35d39972e69ec85e8fd9
 \t<div class=\"col s12 m4 l4\">
 \t\t<div class=\"card horizontal  deep-purple lighten-5\">
 \t\t\t<div class=\"card-image\">
-\t\t\t\t<img style=\"width: 150px\" src=\"https://lh6.ggpht.com/a6pgz7nT0nDr2LmK3dy5b2zS4iBJEcQBWPaKtISsy83BB06cckCeCsiRb-wOxyoUhg=w300-rw\">
+\t\t\t\t<img style=\"width: 150px\" src=\"";
+        // line 21
+        echo $this->env->getExtension('Cms\Twig\Extension')->mediaFilter("Homepage/secciones/news.png");
+        echo "\">
 \t\t\t</div>
 \t\t\t<div class=\"card-stacked\">
             \t<span class=\"card-title\"> Noticias Deportivas</span>
@@ -55,7 +61,10 @@ class __TwigTemplate_3b88eec4cbdfb9ab702b2c9b8929f129fd7650e35d39972e69ec85e8fd9
 \t<div class=\"col s12 m4 l4\">
 \t\t<div class=\"card horizontal  deep-purple lighten-5\">
 \t\t\t<div class=\"card-image\">
-\t\t\t\t<img style=\"width: 150px\" src=\"http://www.jazzsports.ag/images/sportsbetting/liveinplay.png\">
+\t\t\t\t<img style=\"width: 150px\" src=\"";
+        // line 37
+        echo $this->env->getExtension('Cms\Twig\Extension')->mediaFilter("Homepage/secciones/pronosticos-deportivos.png");
+        echo "\">
 \t\t\t</div>
 \t\t\t<div class=\"card-stacked\">
             \t<span class=\"card-title\"> Pronósticos Deportivos</span>
@@ -83,7 +92,7 @@ class __TwigTemplate_3b88eec4cbdfb9ab702b2c9b8929f129fd7650e35d39972e69ec85e8fd9
 
     public function getDebugInfo()
     {
-        return array (  49 => 29,  19 => 1,);
+        return array (  66 => 37,  55 => 29,  44 => 21,  25 => 5,  19 => 1,);
     }
 
     public function getSource()
@@ -92,7 +101,7 @@ class __TwigTemplate_3b88eec4cbdfb9ab702b2c9b8929f129fd7650e35d39972e69ec85e8fd9
 \t<div class=\"col s12 m4 l4\">
 \t\t<div class=\"card horizontal  deep-purple lighten-5\">
 \t\t\t<div class=\"card-image\">
-\t\t\t\t<img style=\"width: 150px\" src=\"http://365psd.com/images/previews/643/vintage-tv-icon-psd-image-2344vintage-tv-icon-512x512.png\">
+\t\t\t\t<img style=\"width: 150px\" src=\"{{ 'Homepage/secciones/partidos-online.png' | media }}\">
 \t\t\t</div>
 \t\t\t<div class=\"card-stacked\">
             \t<span class=\"card-title\"> Partidos Online</span>
@@ -108,7 +117,7 @@ class __TwigTemplate_3b88eec4cbdfb9ab702b2c9b8929f129fd7650e35d39972e69ec85e8fd9
 \t<div class=\"col s12 m4 l4\">
 \t\t<div class=\"card horizontal  deep-purple lighten-5\">
 \t\t\t<div class=\"card-image\">
-\t\t\t\t<img style=\"width: 150px\" src=\"https://lh6.ggpht.com/a6pgz7nT0nDr2LmK3dy5b2zS4iBJEcQBWPaKtISsy83BB06cckCeCsiRb-wOxyoUhg=w300-rw\">
+\t\t\t\t<img style=\"width: 150px\" src=\"{{ 'Homepage/secciones/news.png' | media }}\">
 \t\t\t</div>
 \t\t\t<div class=\"card-stacked\">
             \t<span class=\"card-title\"> Noticias Deportivas</span>
@@ -124,7 +133,7 @@ class __TwigTemplate_3b88eec4cbdfb9ab702b2c9b8929f129fd7650e35d39972e69ec85e8fd9
 \t<div class=\"col s12 m4 l4\">
 \t\t<div class=\"card horizontal  deep-purple lighten-5\">
 \t\t\t<div class=\"card-image\">
-\t\t\t\t<img style=\"width: 150px\" src=\"http://www.jazzsports.ag/images/sportsbetting/liveinplay.png\">
+\t\t\t\t<img style=\"width: 150px\" src=\"{{ 'Homepage/secciones/pronosticos-deportivos.png' | media }}\">
 \t\t\t</div>
 \t\t\t<div class=\"card-stacked\">
             \t<span class=\"card-title\"> Pronósticos Deportivos</span>

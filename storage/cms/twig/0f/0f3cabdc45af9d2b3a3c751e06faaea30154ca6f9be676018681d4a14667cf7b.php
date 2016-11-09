@@ -19,13 +19,14 @@ class __TwigTemplate_f1899813b17c45ee201d41ef1e3c2adefce3b15cdf1b4c26f360ae31c79
         echo "<footer class=\"page-footer deep-purple lighten-4\">
 \t<div class=\"container \">
 \t\t<div class=\"row\">
-\t\t\t<div class=\"col l6 s12\"> 
+\t\t\t<div class=\"col l12 m12 s12\"> 
 \t\t\t    <ul>
                   <li><a class=\"grey-text text-lighten-5\" href=\"";
         // line 6
         echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("contact");
         echo "\">Contacto</a></li>
                   <li><a class=\"grey-text text-lighten-5\" href=\"#!\">Condiciones</a></li>
+                  <li class=\"right-align\"><i class=\"icon-twitter\"></i></li>
                 </ul>
 \t\t\t</div>
 \t\t</div>
@@ -58,10 +59,11 @@ class __TwigTemplate_f1899813b17c45ee201d41ef1e3c2adefce3b15cdf1b4c26f360ae31c79
         return "<footer class=\"page-footer deep-purple lighten-4\">
 \t<div class=\"container \">
 \t\t<div class=\"row\">
-\t\t\t<div class=\"col l6 s12\"> 
+\t\t\t<div class=\"col l12 m12 s12\"> 
 \t\t\t    <ul>
                   <li><a class=\"grey-text text-lighten-5\" href=\"{{ 'contact'|page }}\">Contacto</a></li>
                   <li><a class=\"grey-text text-lighten-5\" href=\"#!\">Condiciones</a></li>
+                  <li class=\"right-align\"><i class=\"icon-twitter\"></i></li>
                 </ul>
 \t\t\t</div>
 \t\t</div>

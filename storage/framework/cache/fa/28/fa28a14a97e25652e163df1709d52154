@@ -1,10 +1,10 @@
-1478491775a:1:{s:18:"home/secciones.htm";a:6:{s:8:"fileName";s:18:"home/secciones.htm";s:7:"content";s:2022:"description = "Grupo de Secciones de acceso rápido en el home"
+1478658965a:1:{s:18:"home/secciones.htm";a:6:{s:8:"fileName";s:18:"home/secciones.htm";s:7:"content";s:1929:"description = "Grupo de Secciones de acceso rápido en el home"
 ==
 <div class="row">
 	<div class="col s12 m4 l4">
 		<div class="card horizontal  deep-purple lighten-5">
 			<div class="card-image">
-				<img style="width: 150px" src="http://365psd.com/images/previews/643/vintage-tv-icon-psd-image-2344vintage-tv-icon-512x512.png">
+				<img style="width: 150px" src="{{ 'Homepage/secciones/partidos-online.png' | media }}">
 			</div>
 			<div class="card-stacked">
             	<span class="card-title"> Partidos Online</span>
@@ -20,7 +20,7 @@
 	<div class="col s12 m4 l4">
 		<div class="card horizontal  deep-purple lighten-5">
 			<div class="card-image">
-				<img style="width: 150px" src="https://lh6.ggpht.com/a6pgz7nT0nDr2LmK3dy5b2zS4iBJEcQBWPaKtISsy83BB06cckCeCsiRb-wOxyoUhg=w300-rw">
+				<img style="width: 150px" src="{{ 'Homepage/secciones/news.png' | media }}">
 			</div>
 			<div class="card-stacked">
             	<span class="card-title"> Noticias Deportivas</span>
@@ -36,7 +36,7 @@
 	<div class="col s12 m4 l4">
 		<div class="card horizontal  deep-purple lighten-5">
 			<div class="card-image">
-				<img style="width: 150px" src="http://www.jazzsports.ag/images/sportsbetting/liveinplay.png">
+				<img style="width: 150px" src="{{ 'Homepage/secciones/pronosticos-deportivos.png' | media }}">
 			</div>
 			<div class="card-stacked">
             	<span class="card-title"> Pronósticos Deportivos</span>
@@ -49,11 +49,11 @@
 			</div>
 		</div>
 	</div>
-</div>";s:5:"mtime";i:1478491094;s:6:"markup";s:1953:"<div class="row">
+</div>";s:5:"mtime";i:1478657525;s:6:"markup";s:1860:"<div class="row">
 	<div class="col s12 m4 l4">
 		<div class="card horizontal  deep-purple lighten-5">
 			<div class="card-image">
-				<img style="width: 150px" src="http://365psd.com/images/previews/643/vintage-tv-icon-psd-image-2344vintage-tv-icon-512x512.png">
+				<img style="width: 150px" src="{{ 'Homepage/secciones/partidos-online.png' | media }}">
 			</div>
 			<div class="card-stacked">
             	<span class="card-title"> Partidos Online</span>
@@ -69,7 +69,7 @@
 	<div class="col s12 m4 l4">
 		<div class="card horizontal  deep-purple lighten-5">
 			<div class="card-image">
-				<img style="width: 150px" src="https://lh6.ggpht.com/a6pgz7nT0nDr2LmK3dy5b2zS4iBJEcQBWPaKtISsy83BB06cckCeCsiRb-wOxyoUhg=w300-rw">
+				<img style="width: 150px" src="{{ 'Homepage/secciones/news.png' | media }}">
 			</div>
 			<div class="card-stacked">
             	<span class="card-title"> Noticias Deportivas</span>
@@ -85,7 +85,7 @@
 	<div class="col s12 m4 l4">
 		<div class="card horizontal  deep-purple lighten-5">
 			<div class="card-image">
-				<img style="width: 150px" src="http://www.jazzsports.ag/images/sportsbetting/liveinplay.png">
+				<img style="width: 150px" src="{{ 'Homepage/secciones/pronosticos-deportivos.png' | media }}">
 			</div>
 			<div class="card-stacked">
             	<span class="card-title"> Pronósticos Deportivos</span>
