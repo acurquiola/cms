@@ -1,4 +1,4 @@
-1478491774a:1:{s:8:"blog.htm";a:12:{s:8:"fileName";s:8:"blog.htm";s:7:"content";s:663:"title = "Blog"
+1478649157a:1:{s:8:"blog.htm";a:12:{s:8:"fileName";s:8:"blog.htm";s:7:"content";s:633:"title = "Blog"
 url = "/blog"
 layout = "default"
 is_hidden = 0
@@ -28,7 +28,7 @@ redirect = "home"
         <h6 class="center"> CATEGORÍAS </h6>
             {% component 'blogCategories' %}
     </div>
-  </div>";s:5:"mtime";i:1478484199;s:6:"markup";s:260:"<div class="row">
+  </div>";s:5:"mtime";i:1478494893;s:6:"markup";s:252:"<div class="row">
     <div class="col s12 m10 l10">
         {% component 'blogPosts' %}
     </div>
