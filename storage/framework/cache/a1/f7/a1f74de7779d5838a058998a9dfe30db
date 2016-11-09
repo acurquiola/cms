@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 1478737681a:1:{i:0;O:8:"stdClass":6:{s:2:"id";i:1;s:7:"user_id";i:1;s:9:"namespace";s:7:"backend";s:5:"group";s:7:"backend";s:4:"item";s:11:"preferences";s:5:"value";s:485:"{"locale":"es-ar","fallback_locale":"es","timezone":"America\/Caracas","editor_font_size":"12","editor_word_wrap":"fluid","editor_code_folding":"manual","editor_tab_size":"4","editor_theme":"twilight","editor_show_invisibles":"0","editor_highlight_active_line":"1","editor_use_hard_tabs":"0","editor_show_gutter":"1","editor_auto_closing":"0","editor_autocompletion":"manual","editor_enable_snippets":"0","editor_display_indent_guides":"0","editor_show_print_margin":"0","user_id":"1"}";}}
+=======
+1478067066a:0:{}
+>>>>>>> 5eb6edca4d6ef2ba135462a6e0923311e0a09db7

@@ -1,8 +1,2 @@
-vendor
-/node_modules
-/storage
-Homestead.yaml
-Homestead.json
-.env
 .DS_Store
 *.log
