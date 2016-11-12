@@ -41,64 +41,63 @@ class __TwigTemplate_d711d8717c2782ea5d1e4a6ab26d8a8cc33049c054ebcfbae336f81f84a
         // line 13
         echo "\" rel=\"stylesheet\">
           <link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\" rel=\"stylesheet\">
-
-        ";
-        // line 16
+    ";
+        // line 15
         echo $this->env->getExtension('CMS')->assetsFunction('css');
         echo $this->env->getExtension('CMS')->displayBlock('styles');
-        // line 17
+        // line 16
         echo "    </head>
     <body>
 
 
         ";
-        // line 21
+        // line 20
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('CMS')->partialFunction("nav"        , $context['__cms_partial_params']        );
         unset($context['__cms_partial_params']);
-        // line 22
+        // line 21
         echo "
         <!-- Content -->
         <main >
             ";
-        // line 25
+        // line 24
         echo $this->env->getExtension('CMS')->pageFunction();
-        // line 26
+        // line 25
         echo "        </main>
         
             ";
-        // line 28
+        // line 27
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('CMS')->partialFunction("footer"        , $context['__cms_partial_params']        );
         unset($context['__cms_partial_params']);
-        // line 29
+        // line 28
         echo "
         <!-- Scripts -->
         <script src=\"";
-        // line 31
+        // line 30
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/js/jquery.js");
         echo "\"></script>
         <script src=\"";
-        // line 32
+        // line 31
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/js/materialize/js/materialize.min.js");
         echo "\"></script>
         <script src=\"";
-        // line 33
+        // line 32
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/js/app.js");
         echo "\"></script>
         ";
-        // line 34
+        // line 33
         echo '<script src="'. Request::getBasePath()
                 .'/modules/system/assets/js/framework.js"></script>'.PHP_EOL;
         echo '<script src="'. Request::getBasePath()
                     .'/modules/system/assets/js/framework.extras.js"></script>'.PHP_EOL;
         echo '<link rel="stylesheet" property="stylesheet" href="'. Request::getBasePath()
                     .'/modules/system/assets/css/framework.extras.css">'.PHP_EOL;
-        // line 35
+        // line 34
         echo "        ";
         echo $this->env->getExtension('CMS')->assetsFunction('js');
         echo $this->env->getExtension('CMS')->displayBlock('scripts');
-        // line 36
+        // line 35
         echo "
     </body>
 </html>";
@@ -116,7 +115,7 @@ class __TwigTemplate_d711d8717c2782ea5d1e4a6ab26d8a8cc33049c054ebcfbae336f81f84a
 
     public function getDebugInfo()
     {
-        return array (  102 => 36,  98 => 35,  91 => 34,  87 => 33,  83 => 32,  79 => 31,  75 => 29,  71 => 28,  67 => 26,  65 => 25,  60 => 22,  56 => 21,  50 => 17,  47 => 16,  42 => 13,  40 => 11,  33 => 7,  29 => 6,  25 => 5,  19 => 1,);
+        return array (  101 => 35,  97 => 34,  90 => 33,  86 => 32,  82 => 31,  78 => 30,  74 => 28,  70 => 27,  66 => 25,  64 => 24,  59 => 21,  55 => 20,  49 => 16,  46 => 15,  42 => 13,  40 => 11,  33 => 7,  29 => 6,  25 => 5,  19 => 1,);
     }
 
     public function getSource()
@@ -135,8 +134,7 @@ class __TwigTemplate_d711d8717c2782ea5d1e4a6ab26d8a8cc33049c054ebcfbae336f81f84a
                         'assets/css/style.css'
                             ]|theme }}\" rel=\"stylesheet\">
           <link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\" rel=\"stylesheet\">
-
-        {% styles %}
+    {% styles %}
     </head>
     <body>
 

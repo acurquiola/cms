@@ -1,4 +1,4 @@
-1478649157a:1:{s:11:"default.htm";a:6:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:1275:"description = "Default layout"
+1478881846a:1:{s:11:"default.htm";a:6:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:1270:"description = "Default layout"
 ==
 <!DOCTYPE html>
 <html>
@@ -14,8 +14,7 @@
                         'assets/css/style.css'
                             ]|theme }}" rel="stylesheet">
           <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-        {% styles %}
+    {% styles %}
     </head>
     <body>
 
@@ -37,7 +36,7 @@
         {% scripts %}
 
     </body>
-</html>";s:5:"mtime";i:1478494893;s:6:"markup";s:1241:"<!DOCTYPE html>
+</html>";s:5:"mtime";i:1478658542;s:6:"markup";s:1236:"<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -51,8 +50,7 @@
                         'assets/css/style.css'
                             ]|theme }}" rel="stylesheet">
           <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-        {% styles %}
+    {% styles %}
     </head>
     <body>
 

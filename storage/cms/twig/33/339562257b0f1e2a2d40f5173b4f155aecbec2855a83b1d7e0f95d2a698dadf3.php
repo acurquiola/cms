@@ -16,13 +16,19 @@ class __TwigTemplate_f485f1aa010b4068cde61f2e58e8f229d5da741f56c1099d0d0d85d35ef
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
+        echo "<div class=\"row\">
+    <div class=\"col l12 m12 s12\">
+        ";
+        // line 3
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('CMS')->partialFunction("home/carousel"        , $context['__cms_partial_params']        );
         unset($context['__cms_partial_params']);
-        // line 2
-        echo "
-";
-        // line 3
+        echo "     
+    </div>
+</div>
+ 
+        ";
+        // line 7
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('CMS')->partialFunction("home/secciones"        , $context['__cms_partial_params']        );
         unset($context['__cms_partial_params']);
@@ -40,13 +46,17 @@ class __TwigTemplate_f485f1aa010b4068cde61f2e58e8f229d5da741f56c1099d0d0d85d35ef
 
     public function getDebugInfo()
     {
-        return array (  26 => 3,  23 => 2,  19 => 1,);
+        return array (  32 => 7,  23 => 3,  19 => 1,);
     }
 
     public function getSource()
     {
-        return "{% partial 'home/carousel' %}
-
-{% partial 'home/secciones' %}";
+        return "<div class=\"row\">
+    <div class=\"col l12 m12 s12\">
+        {% partial 'home/carousel' %}     
+    </div>
+</div>
+ 
+        {% partial 'home/secciones' %}";
     }
 }
