@@ -11,6 +11,19 @@
     <li><a href="{{ 'register'|page }}">Regístrate</a></li>
 </ul>
 
+
+<ul id='button-user-full' class='dropdown-content'>
+    <li><a href="{{ 'perfil'|page }}">Perfil</a></li>
+    <li class="divider"></li>
+    <li><a data-request="onLogout" data-request-data="redirect: '/'">Cerrar Sesión</a></li>
+</ul>
+
+
+<ul id='button-guest-full' class='dropdown-content'>
+    <li><a href="{{ 'login'|page }}">Inicia Sesión</a></li>
+    <li><a href="{{ 'register'|page }}">Regístrate</a></li>
+</ul>
+
 <div class="navbar-fixed">
     <nav class="purple darken-4">
     	<div class="nav-wrapper">
@@ -26,13 +39,13 @@
     				<li class="{% if this.page.id == 'blog' %} active {% endif %}"><a href="{{ 'blog'|page }}">Noticias</a></li>
     				<li class="{% if this.page.id == 'planes' %} active {% endif %}"><a href="{{ 'planes'|page }}">Planes</a></li>
     				<li class="{% if this.page.id == 'contact' %} active {% endif %}"><a href="{{ 'contact'|page }}">Contacto</a></li>
-                    <a class='dropdown-button btn' href='#' data-activates='button-user'>{{ user.name}}</a>
+                    <a class='dropdown-button btn' href='#' data-activates='button-user-full'>{{ user.name}}</a>
                 {% else %}
     				<li class="{% if this.page.id == 'home' %} active {% endif %}"><a href="{{ 'home'|page }}">Home</a></li>
     				<li class="{% if this.page.id == 'planes' %} active {% endif %}"><a href="{{ 'planes'|page }}">Planes</a></li>
     				<li class="{% if this.page.id == 'contact' %} active {% endif %}"><a href="{{ 'contact'|page }}">Contacto</a></li>
     				
-                    <a class='dropdown-button btn' href='#' data-activates='button-guest'>Acceder</a>
+                    <a class='dropdown-button btn' href='#' data-activates='button-guest-full'>Acceder</a>
                 {% endif %}
             </ul>
             <ul class="side-nav" id="mobile-demo">

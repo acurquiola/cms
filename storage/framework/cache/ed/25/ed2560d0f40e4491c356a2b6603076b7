@@ -1,0 +1,37 @@
+1478942480a:1:{s:10:"perfil.htm";a:11:{s:8:"fileName";s:10:"perfil.htm";s:7:"content";s:467:"title = "Perfil"
+url = "/perfil"
+layout = "default"
+is_hidden = 0
+
+[account]
+paramCode = "code"
+
+[session]
+security = "user"
+redirect = "home"
+==
+<div class="container">
+    <div class="section">
+        {% if user %}
+
+            {% partial account ~ '::activation_check' %}
+        
+            {% partial account ~ '::update' %}
+        
+            {% partial account ~ '::deactivate_link' %}
+        
+        {% endif %}
+    </div>
+</div>";s:5:"mtime";i:1478487761;s:6:"markup";s:309:"<div class="container">
+    <div class="section">
+        {% if user %}
+
+            {% partial account ~ '::activation_check' %}
+        
+            {% partial account ~ '::update' %}
+        
+            {% partial account ~ '::deactivate_link' %}
+        
+        {% endif %}
+    </div>
+</div>";s:4:"code";N;s:5:"title";s:6:"Perfil";s:3:"url";s:7:"/perfil";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:7:"account";a:1:{s:9:"paramCode";s:4:"code";}s:7:"session";a:2:{s:8:"security";s:4:"user";s:8:"redirect";s:4:"home";}}}
