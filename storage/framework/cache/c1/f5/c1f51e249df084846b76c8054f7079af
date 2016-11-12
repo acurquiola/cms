@@ -1,4 +1,4 @@
-1478659549a:1:{s:7:"nav.htm";a:6:{s:8:"fileName";s:7:"nav.htm";s:7:"content";s:3247:"==
+1478942481a:1:{s:7:"nav.htm";a:6:{s:8:"fileName";s:7:"nav.htm";s:7:"content";s:3690:"==
 <ul id='button-user' class='dropdown-content'>
     <li><a href="{{ 'perfil'|page }}">Perfil</a></li>
     <li class="divider"></li>
@@ -7,6 +7,19 @@
 
 
 <ul id='button-guest' class='dropdown-content'>
+    <li><a href="{{ 'login'|page }}">Inicia Sesión</a></li>
+    <li><a href="{{ 'register'|page }}">Regístrate</a></li>
+</ul>
+
+
+<ul id='button-user-full' class='dropdown-content'>
+    <li><a href="{{ 'perfil'|page }}">Perfil</a></li>
+    <li class="divider"></li>
+    <li><a data-request="onLogout" data-request-data="redirect: '/'">Cerrar Sesión</a></li>
+</ul>
+
+
+<ul id='button-guest-full' class='dropdown-content'>
     <li><a href="{{ 'login'|page }}">Inicia Sesión</a></li>
     <li><a href="{{ 'register'|page }}">Regístrate</a></li>
 </ul>
@@ -26,13 +39,13 @@
     				<li class="{% if this.page.id == 'blog' %} active {% endif %}"><a href="{{ 'blog'|page }}">Noticias</a></li>
     				<li class="{% if this.page.id == 'planes' %} active {% endif %}"><a href="{{ 'planes'|page }}">Planes</a></li>
     				<li class="{% if this.page.id == 'contact' %} active {% endif %}"><a href="{{ 'contact'|page }}">Contacto</a></li>
-                    <a class='dropdown-button btn' href='#' data-activates='button-user'>{{ user.name}}</a>
+                    <a class='dropdown-button btn' href='#' data-activates='button-user-full'>{{ user.name}}</a>
                 {% else %}
     				<li class="{% if this.page.id == 'home' %} active {% endif %}"><a href="{{ 'home'|page }}">Home</a></li>
     				<li class="{% if this.page.id == 'planes' %} active {% endif %}"><a href="{{ 'planes'|page }}">Planes</a></li>
     				<li class="{% if this.page.id == 'contact' %} active {% endif %}"><a href="{{ 'contact'|page }}">Contacto</a></li>
     				
-                    <a class='dropdown-button btn' href='#' data-activates='button-guest'>Acceder</a>
+                    <a class='dropdown-button btn' href='#' data-activates='button-guest-full'>Acceder</a>
                 {% endif %}
             </ul>
             <ul class="side-nav" id="mobile-demo">
@@ -52,7 +65,7 @@
             </ul>
         </div>
     </nav>
-</div>";s:5:"mtime";i:1478658078;s:6:"markup";s:3243:"<ul id='button-user' class='dropdown-content'>
+</div>";s:5:"mtime";i:1478662434;s:6:"markup";s:3686:"<ul id='button-user' class='dropdown-content'>
     <li><a href="{{ 'perfil'|page }}">Perfil</a></li>
     <li class="divider"></li>
     <li><a data-request="onLogout" data-request-data="redirect: '/'">Cerrar Sesión</a></li>
@@ -60,6 +73,19 @@
 
 
 <ul id='button-guest' class='dropdown-content'>
+    <li><a href="{{ 'login'|page }}">Inicia Sesión</a></li>
+    <li><a href="{{ 'register'|page }}">Regístrate</a></li>
+</ul>
+
+
+<ul id='button-user-full' class='dropdown-content'>
+    <li><a href="{{ 'perfil'|page }}">Perfil</a></li>
+    <li class="divider"></li>
+    <li><a data-request="onLogout" data-request-data="redirect: '/'">Cerrar Sesión</a></li>
+</ul>
+
+
+<ul id='button-guest-full' class='dropdown-content'>
     <li><a href="{{ 'login'|page }}">Inicia Sesión</a></li>
     <li><a href="{{ 'register'|page }}">Regístrate</a></li>
 </ul>
@@ -79,13 +105,13 @@
     				<li class="{% if this.page.id == 'blog' %} active {% endif %}"><a href="{{ 'blog'|page }}">Noticias</a></li>
     				<li class="{% if this.page.id == 'planes' %} active {% endif %}"><a href="{{ 'planes'|page }}">Planes</a></li>
     				<li class="{% if this.page.id == 'contact' %} active {% endif %}"><a href="{{ 'contact'|page }}">Contacto</a></li>
-                    <a class='dropdown-button btn' href='#' data-activates='button-user'>{{ user.name}}</a>
+                    <a class='dropdown-button btn' href='#' data-activates='button-user-full'>{{ user.name}}</a>
                 {% else %}
     				<li class="{% if this.page.id == 'home' %} active {% endif %}"><a href="{{ 'home'|page }}">Home</a></li>
     				<li class="{% if this.page.id == 'planes' %} active {% endif %}"><a href="{{ 'planes'|page }}">Planes</a></li>
     				<li class="{% if this.page.id == 'contact' %} active {% endif %}"><a href="{{ 'contact'|page }}">Contacto</a></li>
     				
-                    <a class='dropdown-button btn' href='#' data-activates='button-guest'>Acceder</a>
+                    <a class='dropdown-button btn' href='#' data-activates='button-guest-full'>Acceder</a>
                 {% endif %}
             </ul>
             <ul class="side-nav" id="mobile-demo">

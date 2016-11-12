@@ -8,23 +8,11 @@ security = "guest"
 redirect = "home"
 
 [account]
-redirect = "home"
 paramCode = "code"
 ==
 <div class="container">
     <div class="section">
-        
-        {% if not user %}
-
-            <div class="row">
-
-                <div class="col-md-6">
-                    <h4>Registro</h4>
-                    {% partial account ~ '::register' %}
-                </div>
-        
-            </div>
-        
-        {% endif %}
+        {% component 'account' %}
+    
     </div>
 </div>

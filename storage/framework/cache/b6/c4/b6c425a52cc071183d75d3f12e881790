@@ -1,0 +1,105 @@
+1478942576a:1:{s:17:"planes/planes.htm";a:6:{s:8:"fileName";s:17:"planes/planes.htm";s:7:"content";s:2646:"description = "Listado de los planes de suscripción"
+==
+{% set records = builderList.records %}
+        {% set displayColumn = builderList.displayColumn %}
+        {% set noRecordsMessage = builderList.noRecordsMessage %}
+        {% set detailsPage = builderList.detailsPage %}
+        {% set detailsKeyColumn = builderList.detailsKeyColumn %}
+        {% set detailsUrlParameter = builderList.detailsUrlParameter %}
+
+       <div class="w-table">
+                <div class="w-container">
+                    {% for record in records %}
+                        {# Use spaceless tag to remove spaces inside the A tag. #}
+             
+                                <div class="w-card color-teal s12 m3 l3">
+                                    <div class="card-header">
+                                        <div class="w-title">
+                                            <b>{{ record.nombre }}</b>
+                                        </div>
+                                        <div class="w-price">
+                                            $ {{ record.precio }}
+                                        </div>
+                                        <div class="container-button">
+                                            <a class="w-button" href="#" target="_blank"> Contratar </a>
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        {{ record.descripcion }}
+                                    </div>
+                                </div>
+
+            {% else %}
+                <li class="no-data">{{ noRecordsMessage }}</li>
+            {% endfor %}
+
+            </div>
+        </div>
+        {% if records.lastPage > 1 %}
+            <ul class="pagination">
+                {% if records.currentPage > 1 %}
+                    <li><a href="{{ this.page.baseFileName|page({ (pageParam): (records.currentPage-1) }) }}">&larr; Prev</a></li>
+                {% endif %}
+
+                {% for page in 1..records.lastPage %}
+                    <li class="{{ records.currentPage == page ? 'active' : null }}">
+                        <a href="{{ this.page.baseFileName|page({ (pageParam): page }) }}">{{ page }}</a>
+                    </li>
+                {% endfor %}
+
+                {% if records.lastPage > records.currentPage %}
+                    <li><a href="{{ this.page.baseFileName|page({ (pageParam): (records.currentPage+1) }) }}">Next &rarr;</a></li>
+                {% endif %}
+            </ul>
+        {% endif %}";s:5:"mtime";i:1478926205;s:6:"markup";s:2587:"{% set records = builderList.records %}
+        {% set displayColumn = builderList.displayColumn %}
+        {% set noRecordsMessage = builderList.noRecordsMessage %}
+        {% set detailsPage = builderList.detailsPage %}
+        {% set detailsKeyColumn = builderList.detailsKeyColumn %}
+        {% set detailsUrlParameter = builderList.detailsUrlParameter %}
+
+       <div class="w-table">
+                <div class="w-container">
+                    {% for record in records %}
+                        {# Use spaceless tag to remove spaces inside the A tag. #}
+             
+                                <div class="w-card color-teal s12 m3 l3">
+                                    <div class="card-header">
+                                        <div class="w-title">
+                                            <b>{{ record.nombre }}</b>
+                                        </div>
+                                        <div class="w-price">
+                                            $ {{ record.precio }}
+                                        </div>
+                                        <div class="container-button">
+                                            <a class="w-button" href="#" target="_blank"> Contratar </a>
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        {{ record.descripcion }}
+                                    </div>
+                                </div>
+
+            {% else %}
+                <li class="no-data">{{ noRecordsMessage }}</li>
+            {% endfor %}
+
+            </div>
+        </div>
+        {% if records.lastPage > 1 %}
+            <ul class="pagination">
+                {% if records.currentPage > 1 %}
+                    <li><a href="{{ this.page.baseFileName|page({ (pageParam): (records.currentPage-1) }) }}">&larr; Prev</a></li>
+                {% endif %}
+
+                {% for page in 1..records.lastPage %}
+                    <li class="{{ records.currentPage == page ? 'active' : null }}">
+                        <a href="{{ this.page.baseFileName|page({ (pageParam): page }) }}">{{ page }}</a>
+                    </li>
+                {% endfor %}
+
+                {% if records.lastPage > records.currentPage %}
+                    <li><a href="{{ this.page.baseFileName|page({ (pageParam): (records.currentPage+1) }) }}">Next &rarr;</a></li>
+                {% endif %}
+            </ul>
+        {% endif %}";s:4:"code";N;s:11:"description";s:37:"Listado de los planes de suscripción";}}
