@@ -29,7 +29,7 @@ redirect = "home"
         <h6 class="center"> CATEGORÍAS </h6>
         {% component 'blogCategories' %}
     </div>
-  </div>";s:5:"mtime";i:1478484225;s:6:"markup";s:256:"<div class="row">
+  </div>";s:5:"mtime";i:1478494893;s:6:"markup";s:248:"<div class="row">
     <div class="col s12 m10 l10">
         {% component 'blogPosts' %}
     </div>

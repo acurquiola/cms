@@ -1,0 +1,13 @@
+1478649157a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:150:"title = "home"
+url = "/"
+layout = "default"
+is_hidden = 0
+
+[session]
+security = "all"
+==
+{% partial 'home/carousel' %}
+
+{% partial 'home/secciones' %}";s:5:"mtime";i:1478494893;s:6:"markup";s:61:"{% partial 'home/carousel' %}
+
+{% partial 'home/secciones' %}";s:4:"code";N;s:5:"title";s:4:"home";s:3:"url";s:1:"/";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:7:"session";a:1:{s:8:"security";s:3:"all";}}}
