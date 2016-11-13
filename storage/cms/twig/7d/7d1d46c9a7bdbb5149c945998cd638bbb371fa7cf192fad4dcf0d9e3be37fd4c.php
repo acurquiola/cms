@@ -19,54 +19,53 @@ class __TwigTemplate_8979f3fba146aa66aa55009bd040bf3895615ca916b4f64fc4029d4d6af
         echo "<div class=\"container\" >
 
     <div class=\"section\" >
-    
         ";
-        // line 5
+        // line 4
         if ( !(isset($context["user"]) ? $context["user"] : null)) {
-            // line 6
-            echo "
+            // line 5
+            echo "        
             <div class=\"row\">
         
                 <div class=\"col-md-6\">
-                    <h4>Iniciar Sesión</h4>
+                    <h3>Iniciar Sesión</h3>
                     ";
-            // line 11
+            // line 10
             $context['__cms_partial_params'] = [];
             echo $this->env->getExtension('CMS')->partialFunction(((isset($context["account"]) ? $context["account"] : null) . "::signin")            , $context['__cms_partial_params']            );
             unset($context['__cms_partial_params']);
-            // line 12
+            // line 11
             echo "                </div>
-   
+        
             </div>
         
         ";
         } else {
-            // line 17
+            // line 16
             echo "        
             ";
-            // line 18
+            // line 17
             $context['__cms_partial_params'] = [];
             echo $this->env->getExtension('CMS')->partialFunction(((isset($context["account"]) ? $context["account"] : null) . "::activation_check")            , $context['__cms_partial_params']            );
             unset($context['__cms_partial_params']);
-            // line 19
+            // line 18
             echo "        
             ";
-            // line 20
+            // line 19
             $context['__cms_partial_params'] = [];
             echo $this->env->getExtension('CMS')->partialFunction(((isset($context["account"]) ? $context["account"] : null) . "::update")            , $context['__cms_partial_params']            );
             unset($context['__cms_partial_params']);
-            // line 21
+            // line 20
             echo "        
             ";
-            // line 22
+            // line 21
             $context['__cms_partial_params'] = [];
             echo $this->env->getExtension('CMS')->partialFunction(((isset($context["account"]) ? $context["account"] : null) . "::deactivate_link")            , $context['__cms_partial_params']            );
             unset($context['__cms_partial_params']);
-            // line 23
+            // line 22
             echo "        
         ";
         }
-        // line 25
+        // line 24
         echo "    </div>
 </div>";
     }
@@ -83,7 +82,7 @@ class __TwigTemplate_8979f3fba146aa66aa55009bd040bf3895615ca916b4f64fc4029d4d6af
 
     public function getDebugInfo()
     {
-        return array (  70 => 25,  66 => 23,  62 => 22,  59 => 21,  55 => 20,  52 => 19,  48 => 18,  45 => 17,  38 => 12,  34 => 11,  27 => 6,  25 => 5,  19 => 1,);
+        return array (  69 => 24,  65 => 22,  61 => 21,  58 => 20,  54 => 19,  51 => 18,  47 => 17,  44 => 16,  37 => 11,  33 => 10,  26 => 5,  24 => 4,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -99,16 +98,15 @@ class __TwigTemplate_8979f3fba146aa66aa55009bd040bf3895615ca916b4f64fc4029d4d6af
         return new Twig_Source("<div class=\"container\" >
 
     <div class=\"section\" >
-    
         {% if not user %}
-
+        
             <div class=\"row\">
         
                 <div class=\"col-md-6\">
-                    <h4>Iniciar Sesión</h4>
+                    <h3>Iniciar Sesión</h3>
                     {% partial account ~ '::signin' %}
                 </div>
-   
+        
             </div>
         
         {% else %}

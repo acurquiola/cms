@@ -1,4 +1,4 @@
-1478649157a:1:{s:13:"blog/post.htm";a:12:{s:8:"fileName";s:13:"blog/post.htm";s:7:"content";s:470:"title = "Blog Post"
+1479026837a:1:{s:13:"blog/post.htm";a:12:{s:8:"fileName";s:13:"blog/post.htm";s:7:"content";s:1592:"title = "Blog Post"
 url = "/blog/post/:slug"
 layout = "default"
 is_hidden = 0
@@ -22,11 +22,91 @@ function onEnd()
 }
 ?>
 ==
-{% component 'PostBreadCrumbs' %}
-<h3 class="blue-text text-blue">{{ this.page.title }}</h3>
-{% component 'blogPost' %}";s:5:"mtime";i:1478494893;s:6:"markup";s:119:"{% component 'PostBreadCrumbs' %}
-<h3 class="blue-text text-blue">{{ this.page.title }}</h3>
-{% component 'blogPost' %}";s:4:"code";s:70:"function onEnd()
+<div class="section">
+	<div class="row">
+		
+		<div class="col s12 m8 l8">
+			<div class="card post">
+			
+				{% component 'PostBreadCrumbs' %}
+				<h3 class="post-title">{{ this.page.title }}</h3>
+				{% set post = blogPost.post %}
+
+
+				<p class="post-info">
+				    Publicado el
+				    {% if post.categories.count %} in
+				        {% for category in post.categories %}
+				            <a href="{{ category.url }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
+				        {% endfor %}
+				    {% endif %}
+				    el {{ post.published_at|date('M d, Y') }}
+				</p>
+
+				<div class="card-content">{{ post.content_html|raw }}</div>
+
+				{% if post.featured_images.count %}
+				    <div class="featured-images text-center" >
+				        {% for image in post.featured_images %}
+				            <p>
+				                <img 
+				                    data-src="{{ image.filename }}"
+				                    src="{{ image.path }}"
+				                    alt="{{ image.description }}"
+				                    style="max-width: 100%; margin-top: 50px" />
+				            </p>
+				        {% endfor %}
+				    </div>
+				{% endif %}
+
+
+
+			</div>
+		</div>
+	</div>
+</div>";s:5:"mtime";i:1479026233;s:6:"markup";s:1217:"<div class="section">
+	<div class="row">
+		
+		<div class="col s12 m8 l8">
+			<div class="card post">
+			
+				{% component 'PostBreadCrumbs' %}
+				<h3 class="post-title">{{ this.page.title }}</h3>
+				{% set post = blogPost.post %}
+
+
+				<p class="post-info">
+				    Publicado el
+				    {% if post.categories.count %} in
+				        {% for category in post.categories %}
+				            <a href="{{ category.url }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
+				        {% endfor %}
+				    {% endif %}
+				    el {{ post.published_at|date('M d, Y') }}
+				</p>
+
+				<div class="card-content">{{ post.content_html|raw }}</div>
+
+				{% if post.featured_images.count %}
+				    <div class="featured-images text-center" >
+				        {% for image in post.featured_images %}
+				            <p>
+				                <img 
+				                    data-src="{{ image.filename }}"
+				                    src="{{ image.path }}"
+				                    alt="{{ image.description }}"
+				                    style="max-width: 100%; margin-top: 50px" />
+				            </p>
+				        {% endfor %}
+				    </div>
+				{% endif %}
+
+
+
+			</div>
+		</div>
+	</div>
+</div>";s:4:"code";s:70:"function onEnd()
 {
     $this->page->title = $this['post']->title;
 }";s:5:"title";s:9:"Blog Post";s:3:"url";s:16:"/blog/post/:slug";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:8:"blogPost";a:2:{s:4:"slug";s:11:"{{ :slug }}";s:12:"categoryPage";s:15:"blog/categorias";}s:15:"PostBreadCrumbs";a:2:{s:12:"categoryPage";s:15:"blog/categorias";s:8:"postSlug";s:11:"{{ :slug }}";}s:7:"session";a:2:{s:8:"security";s:4:"user";s:8:"redirect";s:4:"home";}}}

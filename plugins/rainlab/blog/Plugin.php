@@ -6,6 +6,7 @@ use RainLab\Blog\Models\Post;
 use System\Classes\PluginBase;
 use RainLab\Blog\Classes\TagProcessor;
 use RainLab\Blog\Models\Category;
+use Illuminate\Support\Facades\Redirect;
 use Event;
 
 class Plugin extends PluginBase

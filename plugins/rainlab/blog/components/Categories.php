@@ -3,6 +3,7 @@
 use Db;
 use App;
 use Request;
+use Redirect;
 use Cms\Classes\Page;
 use Cms\Classes\ComponentBase;
 use RainLab\Blog\Models\Category as BlogCategory;
@@ -64,9 +65,15 @@ class Categories extends ComponentBase
 
     public function onRun()
     {
-        $this->currentCategorySlug = $this->page['currentCategorySlug'] = $this->property('slug');
-        $this->categoryPage = $this->page['categoryPage'] = $this->property('categoryPage');
-        $this->categories = $this->page['categories'] = $this->loadCategories();
+        $usersPremium = \KurtJensen\Passage\Plugin::hasGroup('usuarios-premium');
+
+        if ($usersPremium){
+            $this->currentCategorySlug = $this->page['currentCategorySlug'] = $this->property('slug');
+            $this->categoryPage = $this->page['categoryPage'] = $this->property('categoryPage');
+            $this->categories = $this->page['categories'] = $this->loadCategories();
+        }else{
+            return Redirect::to('/');
+        }
     }
 
     protected function loadCategories()

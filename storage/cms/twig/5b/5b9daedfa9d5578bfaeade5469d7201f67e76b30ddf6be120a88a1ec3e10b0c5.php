@@ -35,7 +35,7 @@ class __TwigTemplate_f91aba88122fee0899d724001f83dae1872de9e33a463f38ccc26082c51
 \t\t\t\t</div>
 \t\t\t</div>
 \t\t</div>
-\t</div>
+\t</div> 
 \t<div class=\"col s12 m4 l4\">
 \t\t<div class=\"card horizontal  deep-purple lighten-5\">
 \t\t\t<div class=\"card-image\">
@@ -121,7 +121,7 @@ class __TwigTemplate_f91aba88122fee0899d724001f83dae1872de9e33a463f38ccc26082c51
 \t\t\t\t</div>
 \t\t\t</div>
 \t\t</div>
-\t</div>
+\t</div> 
 \t<div class=\"col s12 m4 l4\">
 \t\t<div class=\"card horizontal  deep-purple lighten-5\">
 \t\t\t<div class=\"card-image\">

@@ -1,0 +1,8 @@
+1479017314a:1:{s:24:"home/alertaVerPlanes.htm";a:6:{s:8:"fileName";s:24:"home/alertaVerPlanes.htm";s:7:"content";s:325:"==
+<div class="s12 m12 l12 card-panel deep-purple lighten-5">
+    <p class="center-align">Te invitamos a que contrates alguno de nuestros planes y disfrutes de todo el contenido que tenemos para ti
+    <a class="waves-effect waves-light btn " style="margin-left: 20px" href="{{ 'planes'|page}}" >Ver Planes</a></p>
+</div>";s:5:"mtime";i:1478984427;s:6:"markup";s:321:"<div class="s12 m12 l12 card-panel deep-purple lighten-5">
+    <p class="center-align">Te invitamos a que contrates alguno de nuestros planes y disfrutes de todo el contenido que tenemos para ti
+    <a class="waves-effect waves-light btn " style="margin-left: 20px" href="{{ 'planes'|page}}" >Ver Planes</a></p>
+</div>";s:4:"code";N;s:17:"_PARSER_ERROR_INI";s:0:"";}}

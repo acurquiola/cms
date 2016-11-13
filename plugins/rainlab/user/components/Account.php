@@ -230,8 +230,6 @@ class Account extends ComponentBase
         try {
             $code = post('code', $code);
 
-            dd($code);
-
             /*
              * Break up the code parts
              */
@@ -368,7 +366,6 @@ class Account extends ComponentBase
             'link' => $link,
             'code' => $code
         ];
-
 
         Mail::send('rainlab.user::mail.activate', $data, function($message) use ($user) {
             $message->to($user->email, $user->name);

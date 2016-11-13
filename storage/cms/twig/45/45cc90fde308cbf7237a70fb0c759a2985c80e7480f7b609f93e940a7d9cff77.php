@@ -26,26 +26,27 @@ class __TwigTemplate_b6107c84d0ef096cbddb16151bf921fcd4dbd455c0baeda5f85845f3eae
         echo "     
 \t</div>
 </div>
-";
-        // line 6
+
+    ";
+        // line 7
+        if (call_user_func_array($this->env->getFunction('inGroup')->getCallable(), array("registered"))) {
+            // line 8
+            echo "        <div class=\"row\">
+        \t<div class=\"col l12 m12 s12\">
+                ";
+            // line 10
+            $context['__cms_partial_params'] = [];
+            echo $this->env->getExtension('CMS')->partialFunction("home/alertaVerPlanes"            , $context['__cms_partial_params']            );
+            unset($context['__cms_partial_params']);
+            // line 11
+            echo "        \t</div>
+        </div>
+    ";
+        }
+        // line 14
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('CMS')->partialFunction("home/secciones"        , $context['__cms_partial_params']        );
         unset($context['__cms_partial_params']);
-        // line 7
-        echo "
-<div>
-\t<a href=\"#confirmacion-modal\" class=\"btn modal-trigger\" id=\"confirmacion-modal-btn\" style=\"display: none\">Modal</a>
-
-\t<div id=\"confirmacion-modal\" class=\"modal\">
-\t\t<div class=\"modal-content\">
-\t\t\t<h4>Modal Header</h4>
-\t\t\t<p>A bunch of text</p>
-\t\t</div>
-\t\t<div class=\"modal-footer\">
-\t\t<a href=\"#!\" class=\" modal-action modal-close waves-effect waves-green btn-flat\">OK</a>
-\t\t</div>
-\t</div>
-</div>";
     }
 
     public function getTemplateName()
@@ -60,7 +61,7 @@ class __TwigTemplate_b6107c84d0ef096cbddb16151bf921fcd4dbd455c0baeda5f85845f3eae
 
     public function getDebugInfo()
     {
-        return array (  35 => 7,  31 => 6,  23 => 3,  19 => 1,);
+        return array (  47 => 14,  42 => 11,  38 => 10,  34 => 8,  32 => 7,  23 => 3,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -78,20 +79,14 @@ class __TwigTemplate_b6107c84d0ef096cbddb16151bf921fcd4dbd455c0baeda5f85845f3eae
 \t\t{% partial 'home/carousel' %}     
 \t</div>
 </div>
-{% partial 'home/secciones' %}
 
-<div>
-\t<a href=\"#confirmacion-modal\" class=\"btn modal-trigger\" id=\"confirmacion-modal-btn\" style=\"display: none\">Modal</a>
-
-\t<div id=\"confirmacion-modal\" class=\"modal\">
-\t\t<div class=\"modal-content\">
-\t\t\t<h4>Modal Header</h4>
-\t\t\t<p>A bunch of text</p>
-\t\t</div>
-\t\t<div class=\"modal-footer\">
-\t\t<a href=\"#!\" class=\" modal-action modal-close waves-effect waves-green btn-flat\">OK</a>
-\t\t</div>
-\t</div>
-</div>", "C:\\xampp\\htdocs\\cms/themes/topsportstv/pages/home.htm", "");
+    {% if inGroup('registered') %}
+        <div class=\"row\">
+        \t<div class=\"col l12 m12 s12\">
+                {% partial 'home/alertaVerPlanes' %}
+        \t</div>
+        </div>
+    {% endif %}
+{% partial 'home/secciones' %}", "C:\\xampp\\htdocs\\cms/themes/topsportstv/pages/home.htm", "");
     }
 }

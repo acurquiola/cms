@@ -83,16 +83,21 @@ class __TwigTemplate_186f3738ea4daae7050ca1f9195e9474cd96ceda6b70ba59128341fd692
             echo "\"><a href=\"";
             echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("home");
             echo "\">Home</a></li>
-    \t\t\t\t<li class=\"";
+    \t\t\t\t";
             // line 38
-            if (($this->getAttribute($this->getAttribute((isset($context["this"]) ? $context["this"] : null), "page", array()), "id", array()) == "blog")) {
-                echo " active ";
+            if (call_user_func_array($this->env->getFunction('inGroup')->getCallable(), array("usuarios-premium"))) {
+                // line 39
+                echo "    \t\t\t\t    <li class=\"";
+                if (($this->getAttribute($this->getAttribute((isset($context["this"]) ? $context["this"] : null), "page", array()), "id", array()) == "blog")) {
+                    echo " active ";
+                }
+                echo "\"><a href=\"";
+                echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("blog");
+                echo "\">Noticias</a></li>
+    \t\t\t\t";
             }
-            echo "\"><a href=\"";
-            echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("blog");
-            echo "\">Noticias</a></li>
-    \t\t\t\t<li class=\"";
-            // line 39
+            // line 41
+            echo "    \t\t\t\t<li class=\"";
             if (($this->getAttribute($this->getAttribute((isset($context["this"]) ? $context["this"] : null), "page", array()), "id", array()) == "planes")) {
                 echo " active ";
             }
@@ -100,7 +105,7 @@ class __TwigTemplate_186f3738ea4daae7050ca1f9195e9474cd96ceda6b70ba59128341fd692
             echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("planes");
             echo "\">Planes</a></li>
     \t\t\t\t<li class=\"";
-            // line 40
+            // line 42
             if (($this->getAttribute($this->getAttribute((isset($context["this"]) ? $context["this"] : null), "page", array()), "id", array()) == "contact")) {
                 echo " active ";
             }
@@ -108,12 +113,12 @@ class __TwigTemplate_186f3738ea4daae7050ca1f9195e9474cd96ceda6b70ba59128341fd692
             echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("contact");
             echo "\">Contacto</a></li>
                     <a class='dropdown-button btn' href='#' data-activates='button-user-full'>";
-            // line 41
+            // line 43
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["user"]) ? $context["user"] : null), "name", array()), "html", null, true);
             echo "</a>
                 ";
         } else {
-            // line 43
+            // line 45
             echo "    \t\t\t\t<li class=\"";
             if (($this->getAttribute($this->getAttribute((isset($context["this"]) ? $context["this"] : null), "page", array()), "id", array()) == "home")) {
                 echo " active ";
@@ -122,7 +127,7 @@ class __TwigTemplate_186f3738ea4daae7050ca1f9195e9474cd96ceda6b70ba59128341fd692
             echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("home");
             echo "\">Home</a></li>
     \t\t\t\t<li class=\"";
-            // line 44
+            // line 46
             if (($this->getAttribute($this->getAttribute((isset($context["this"]) ? $context["this"] : null), "page", array()), "id", array()) == "planes")) {
                 echo " active ";
             }
@@ -130,7 +135,7 @@ class __TwigTemplate_186f3738ea4daae7050ca1f9195e9474cd96ceda6b70ba59128341fd692
             echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("planes");
             echo "\">Planes</a></li>
     \t\t\t\t<li class=\"";
-            // line 45
+            // line 47
             if (($this->getAttribute($this->getAttribute((isset($context["this"]) ? $context["this"] : null), "page", array()), "id", array()) == "contact")) {
                 echo " active ";
             }
@@ -141,13 +146,13 @@ class __TwigTemplate_186f3738ea4daae7050ca1f9195e9474cd96ceda6b70ba59128341fd692
                     <a class='dropdown-button btn' href='#' data-activates='button-guest-full'>Acceder</a>
                 ";
         }
-        // line 49
+        // line 51
         echo "            </ul>
             <ul class=\"side-nav\" id=\"mobile-demo\">
                 ";
-        // line 51
+        // line 53
         if ((isset($context["user"]) ? $context["user"] : null)) {
-            // line 52
+            // line 54
             echo "    \t\t\t\t<li class=\"";
             if (($this->getAttribute($this->getAttribute((isset($context["this"]) ? $context["this"] : null), "page", array()), "id", array()) == "home")) {
                 echo " active ";
@@ -155,16 +160,21 @@ class __TwigTemplate_186f3738ea4daae7050ca1f9195e9474cd96ceda6b70ba59128341fd692
             echo "\"><a href=\"";
             echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("home");
             echo "\">Home</a></li>
-    \t\t\t\t<li class=\"";
-            // line 53
-            if (($this->getAttribute($this->getAttribute((isset($context["this"]) ? $context["this"] : null), "page", array()), "id", array()) == "blog")) {
-                echo " active ";
+    \t\t\t\t";
+            // line 55
+            if (call_user_func_array($this->env->getFunction('inGroup')->getCallable(), array("usuarios-premium"))) {
+                // line 56
+                echo "    \t\t\t\t    <li class=\"";
+                if (($this->getAttribute($this->getAttribute((isset($context["this"]) ? $context["this"] : null), "page", array()), "id", array()) == "blog")) {
+                    echo " active ";
+                }
+                echo "\"><a href=\"";
+                echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("blog");
+                echo "\">Noticias</a></li>
+    \t\t\t\t";
             }
-            echo "\"><a href=\"";
-            echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("blog");
-            echo "\">Noticias</a></li>
-    \t\t\t\t<li class=\"";
-            // line 54
+            // line 58
+            echo "    \t\t\t\t<li class=\"";
             if (($this->getAttribute($this->getAttribute((isset($context["this"]) ? $context["this"] : null), "page", array()), "id", array()) == "planes")) {
                 echo " active ";
             }
@@ -172,7 +182,7 @@ class __TwigTemplate_186f3738ea4daae7050ca1f9195e9474cd96ceda6b70ba59128341fd692
             echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("planes");
             echo "\">Planes</a></li>
     \t\t\t\t<li class=\"";
-            // line 55
+            // line 59
             if (($this->getAttribute($this->getAttribute((isset($context["this"]) ? $context["this"] : null), "page", array()), "id", array()) == "contact")) {
                 echo " active ";
             }
@@ -180,12 +190,12 @@ class __TwigTemplate_186f3738ea4daae7050ca1f9195e9474cd96ceda6b70ba59128341fd692
             echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("contact");
             echo "\">Contacto</a></li>
                     <a class='dropdown-button btn' href='#' data-activates='button-user'>";
-            // line 56
+            // line 60
             echo twig_escape_filter($this->env, $this->getAttribute((isset($context["user"]) ? $context["user"] : null), "name", array()), "html", null, true);
             echo "</a>
                 ";
         } else {
-            // line 58
+            // line 62
             echo "    \t\t\t\t<li class=\"";
             if (($this->getAttribute($this->getAttribute((isset($context["this"]) ? $context["this"] : null), "page", array()), "id", array()) == "home")) {
                 echo " active ";
@@ -194,7 +204,7 @@ class __TwigTemplate_186f3738ea4daae7050ca1f9195e9474cd96ceda6b70ba59128341fd692
             echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("home");
             echo "\">Home</a></li>
     \t\t\t\t<li class=\"";
-            // line 59
+            // line 63
             if (($this->getAttribute($this->getAttribute((isset($context["this"]) ? $context["this"] : null), "page", array()), "id", array()) == "planes")) {
                 echo " active ";
             }
@@ -202,7 +212,7 @@ class __TwigTemplate_186f3738ea4daae7050ca1f9195e9474cd96ceda6b70ba59128341fd692
             echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("planes");
             echo "\">Planes</a></li>
     \t\t\t\t<li class=\"";
-            // line 60
+            // line 64
             if (($this->getAttribute($this->getAttribute((isset($context["this"]) ? $context["this"] : null), "page", array()), "id", array()) == "contact")) {
                 echo " active ";
             }
@@ -213,7 +223,7 @@ class __TwigTemplate_186f3738ea4daae7050ca1f9195e9474cd96ceda6b70ba59128341fd692
                     <a class='dropdown-button btn' href='#' data-activates='button-guest'>Acceder</a>
                 ";
         }
-        // line 64
+        // line 68
         echo "            </ul>
         </div>
     </nav>
@@ -232,7 +242,7 @@ class __TwigTemplate_186f3738ea4daae7050ca1f9195e9474cd96ceda6b70ba59128341fd692
 
     public function getDebugInfo()
     {
-        return array (  217 => 64,  206 => 60,  198 => 59,  189 => 58,  184 => 56,  176 => 55,  168 => 54,  160 => 53,  151 => 52,  149 => 51,  145 => 49,  134 => 45,  126 => 44,  117 => 43,  112 => 41,  104 => 40,  96 => 39,  88 => 38,  79 => 37,  77 => 36,  67 => 29,  58 => 23,  54 => 22,  44 => 15,  36 => 10,  32 => 9,  22 => 2,  19 => 1,);
+        return array (  227 => 68,  216 => 64,  208 => 63,  199 => 62,  194 => 60,  186 => 59,  177 => 58,  167 => 56,  165 => 55,  156 => 54,  154 => 53,  150 => 51,  139 => 47,  131 => 46,  122 => 45,  117 => 43,  109 => 42,  100 => 41,  90 => 39,  88 => 38,  79 => 37,  77 => 36,  67 => 29,  58 => 23,  54 => 22,  44 => 15,  36 => 10,  32 => 9,  22 => 2,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -282,7 +292,9 @@ class __TwigTemplate_186f3738ea4daae7050ca1f9195e9474cd96ceda6b70ba59128341fd692
             <ul class=\"right hide-on-med-and-down\">
                 {% if user %}
     \t\t\t\t<li class=\"{% if this.page.id == 'home' %} active {% endif %}\"><a href=\"{{ 'home'|page }}\">Home</a></li>
-    \t\t\t\t<li class=\"{% if this.page.id == 'blog' %} active {% endif %}\"><a href=\"{{ 'blog'|page }}\">Noticias</a></li>
+    \t\t\t\t{% if inGroup('usuarios-premium') %}
+    \t\t\t\t    <li class=\"{% if this.page.id == 'blog' %} active {% endif %}\"><a href=\"{{ 'blog'|page }}\">Noticias</a></li>
+    \t\t\t\t{% endif %}
     \t\t\t\t<li class=\"{% if this.page.id == 'planes' %} active {% endif %}\"><a href=\"{{ 'planes'|page }}\">Planes</a></li>
     \t\t\t\t<li class=\"{% if this.page.id == 'contact' %} active {% endif %}\"><a href=\"{{ 'contact'|page }}\">Contacto</a></li>
                     <a class='dropdown-button btn' href='#' data-activates='button-user-full'>{{ user.name}}</a>
@@ -297,7 +309,9 @@ class __TwigTemplate_186f3738ea4daae7050ca1f9195e9474cd96ceda6b70ba59128341fd692
             <ul class=\"side-nav\" id=\"mobile-demo\">
                 {% if user %}
     \t\t\t\t<li class=\"{% if this.page.id == 'home' %} active {% endif %}\"><a href=\"{{ 'home'|page }}\">Home</a></li>
-    \t\t\t\t<li class=\"{% if this.page.id == 'blog' %} active {% endif %}\"><a href=\"{{ 'blog'|page }}\">Noticias</a></li>
+    \t\t\t\t{% if inGroup('usuarios-premium') %}
+    \t\t\t\t    <li class=\"{% if this.page.id == 'blog' %} active {% endif %}\"><a href=\"{{ 'blog'|page }}\">Noticias</a></li>
+    \t\t\t\t{% endif %}
     \t\t\t\t<li class=\"{% if this.page.id == 'planes' %} active {% endif %}\"><a href=\"{{ 'planes'|page }}\">Planes</a></li>
     \t\t\t\t<li class=\"{% if this.page.id == 'contact' %} active {% endif %}\"><a href=\"{{ 'contact'|page }}\">Contacto</a></li>
                     <a class='dropdown-button btn' href='#' data-activates='button-user'>{{ user.name}}</a>

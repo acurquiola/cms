@@ -1,4 +1,4 @@
-1478942481a:1:{s:7:"nav.htm";a:6:{s:8:"fileName";s:7:"nav.htm";s:7:"content";s:3690:"==
+1479026659a:1:{s:7:"nav.htm";a:6:{s:8:"fileName";s:7:"nav.htm";s:7:"content";s:3832:"==
 <ul id='button-user' class='dropdown-content'>
     <li><a href="{{ 'perfil'|page }}">Perfil</a></li>
     <li class="divider"></li>
@@ -36,7 +36,9 @@
             <ul class="right hide-on-med-and-down">
                 {% if user %}
     				<li class="{% if this.page.id == 'home' %} active {% endif %}"><a href="{{ 'home'|page }}">Home</a></li>
-    				<li class="{% if this.page.id == 'blog' %} active {% endif %}"><a href="{{ 'blog'|page }}">Noticias</a></li>
+    				{% if inGroup('usuarios-premium') %}
+    				    <li class="{% if this.page.id == 'blog' %} active {% endif %}"><a href="{{ 'blog'|page }}">Noticias</a></li>
+    				{% endif %}
     				<li class="{% if this.page.id == 'planes' %} active {% endif %}"><a href="{{ 'planes'|page }}">Planes</a></li>
     				<li class="{% if this.page.id == 'contact' %} active {% endif %}"><a href="{{ 'contact'|page }}">Contacto</a></li>
                     <a class='dropdown-button btn' href='#' data-activates='button-user-full'>{{ user.name}}</a>
@@ -51,7 +53,9 @@
             <ul class="side-nav" id="mobile-demo">
                 {% if user %}
     				<li class="{% if this.page.id == 'home' %} active {% endif %}"><a href="{{ 'home'|page }}">Home</a></li>
-    				<li class="{% if this.page.id == 'blog' %} active {% endif %}"><a href="{{ 'blog'|page }}">Noticias</a></li>
+    				{% if inGroup('usuarios-premium') %}
+    				    <li class="{% if this.page.id == 'blog' %} active {% endif %}"><a href="{{ 'blog'|page }}">Noticias</a></li>
+    				{% endif %}
     				<li class="{% if this.page.id == 'planes' %} active {% endif %}"><a href="{{ 'planes'|page }}">Planes</a></li>
     				<li class="{% if this.page.id == 'contact' %} active {% endif %}"><a href="{{ 'contact'|page }}">Contacto</a></li>
                     <a class='dropdown-button btn' href='#' data-activates='button-user'>{{ user.name}}</a>
@@ -65,7 +69,7 @@
             </ul>
         </div>
     </nav>
-</div>";s:5:"mtime";i:1478662434;s:6:"markup";s:3686:"<ul id='button-user' class='dropdown-content'>
+</div>";s:5:"mtime";i:1479017093;s:6:"markup";s:3828:"<ul id='button-user' class='dropdown-content'>
     <li><a href="{{ 'perfil'|page }}">Perfil</a></li>
     <li class="divider"></li>
     <li><a data-request="onLogout" data-request-data="redirect: '/'">Cerrar Sesión</a></li>
@@ -102,7 +106,9 @@
             <ul class="right hide-on-med-and-down">
                 {% if user %}
     				<li class="{% if this.page.id == 'home' %} active {% endif %}"><a href="{{ 'home'|page }}">Home</a></li>
-    				<li class="{% if this.page.id == 'blog' %} active {% endif %}"><a href="{{ 'blog'|page }}">Noticias</a></li>
+    				{% if inGroup('usuarios-premium') %}
+    				    <li class="{% if this.page.id == 'blog' %} active {% endif %}"><a href="{{ 'blog'|page }}">Noticias</a></li>
+    				{% endif %}
     				<li class="{% if this.page.id == 'planes' %} active {% endif %}"><a href="{{ 'planes'|page }}">Planes</a></li>
     				<li class="{% if this.page.id == 'contact' %} active {% endif %}"><a href="{{ 'contact'|page }}">Contacto</a></li>
                     <a class='dropdown-button btn' href='#' data-activates='button-user-full'>{{ user.name}}</a>
@@ -117,7 +123,9 @@
             <ul class="side-nav" id="mobile-demo">
                 {% if user %}
     				<li class="{% if this.page.id == 'home' %} active {% endif %}"><a href="{{ 'home'|page }}">Home</a></li>
-    				<li class="{% if this.page.id == 'blog' %} active {% endif %}"><a href="{{ 'blog'|page }}">Noticias</a></li>
+    				{% if inGroup('usuarios-premium') %}
+    				    <li class="{% if this.page.id == 'blog' %} active {% endif %}"><a href="{{ 'blog'|page }}">Noticias</a></li>
+    				{% endif %}
     				<li class="{% if this.page.id == 'planes' %} active {% endif %}"><a href="{{ 'planes'|page }}">Planes</a></li>
     				<li class="{% if this.page.id == 'contact' %} active {% endif %}"><a href="{{ 'contact'|page }}">Contacto</a></li>
                     <a class='dropdown-button btn' href='#' data-activates='button-user'>{{ user.name}}</a>

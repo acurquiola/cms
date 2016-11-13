@@ -1,0 +1,35 @@
+title = "Reiniciar Constraseña"
+url = "/reiniciar-constrasena"
+layout = "default"
+is_hidden = 0
+
+[resetPassword]
+paramCode = "code"
+==
+<div class="container" >
+
+    <div class="section" >
+    
+        {% if not user %}
+
+            <div class="row">
+        
+                <div class="col-md-6">
+                
+                    {% component 'resetPassword' %}
+
+                </div>
+   
+            </div>
+        
+        {% else %}
+        
+            {% partial account ~ '::activation_check' %}
+        
+            {% partial account ~ '::update' %}
+        
+            {% partial account ~ '::deactivate_link' %}
+        
+        {% endif %}
+    </div>
+</div>
