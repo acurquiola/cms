@@ -1,4 +1,4 @@
-1478881846a:1:{s:11:"default.htm";a:6:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:1270:"description = "Default layout"
+1479011060a:1:{s:11:"default.htm";a:6:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:1342:"description = "Default layout"
 ==
 <!DOCTYPE html>
 <html>
@@ -11,7 +11,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="generator" content="OctoberCMS">
         <link href="{{ ['assets/css/materialize/css/materialize.min.css',
-                        'assets/css/style.css'
+                        'assets/css/style.css',
+                        'assets/font-awesome/css/font-awesome.min.css'
                             ]|theme }}" rel="stylesheet">
           <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     {% styles %}
@@ -36,7 +37,7 @@
         {% scripts %}
 
     </body>
-</html>";s:5:"mtime";i:1478658542;s:6:"markup";s:1236:"<!DOCTYPE html>
+</html>";s:5:"mtime";i:1478940934;s:6:"markup";s:1308:"<!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
@@ -47,7 +48,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="generator" content="OctoberCMS">
         <link href="{{ ['assets/css/materialize/css/materialize.min.css',
-                        'assets/css/style.css'
+                        'assets/css/style.css',
+                        'assets/font-awesome/css/font-awesome.min.css'
                             ]|theme }}" rel="stylesheet">
           <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     {% styles %}
