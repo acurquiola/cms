@@ -1,8 +1,4 @@
-<<<<<<< HEAD:storage/framework/cache/fa/28/fa28a14a97e25652e163df1709d52154
-1479021969a:1:{s:18:"home/secciones.htm";a:6:{s:8:"fileName";s:18:"home/secciones.htm";s:7:"content";s:1930:"description = "Grupo de Secciones de acceso rápido en el home"
-=======
-1479011060a:1:{s:18:"home/secciones.htm";a:6:{s:8:"fileName";s:18:"home/secciones.htm";s:7:"content";s:1878:"description = "Grupo de Secciones de acceso rápido en el home"
->>>>>>> 649b02666e2a0567bd55718356c4ce798bacfcdc:storage/framework/cache/df/9b/df9b082961c33435da19d8bcccb85f67
+1479080491a:1:{s:18:"home/secciones.htm";a:6:{s:8:"fileName";s:18:"home/secciones.htm";s:7:"content";s:1879:"description = "Grupo de Secciones de acceso rápido en el home"
 ==
 <div class="row">
 	<div class="col s12 m4 l4">
@@ -53,11 +49,7 @@
 			</div>
 		</div>
 	</div>
-<<<<<<< HEAD:storage/framework/cache/fa/28/fa28a14a97e25652e163df1709d52154
-</div>";s:5:"mtime";i:1479018078;s:6:"markup";s:1861:"<div class="row">
-=======
-</div>";s:5:"mtime";i:1478658542;s:6:"markup";s:1811:"<div class="row">
->>>>>>> 649b02666e2a0567bd55718356c4ce798bacfcdc:storage/framework/cache/df/9b/df9b082961c33435da19d8bcccb85f67
+</div>";s:5:"mtime";i:1479079828;s:6:"markup";s:1812:"<div class="row">
 	<div class="col s12 m4 l4">
 		<div class="card horizontal  deep-purple lighten-5">
 			<div class="card-image">

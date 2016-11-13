@@ -1,4 +1,4 @@
-1479011060a:1:{s:12:"register.htm";a:11:{s:8:"fileName";s:12:"register.htm";s:7:"content";s:257:"title = "Register"
+1479080491a:1:{s:12:"register.htm";a:11:{s:8:"fileName";s:12:"register.htm";s:7:"content";s:979:"title = "Register"
 url = "/register"
 layout = "default"
 is_hidden = 0
@@ -40,7 +40,7 @@ redirect = "home"
         
         {% endif %}
     </div>
-</div>";s:5:"mtime";i:1478940934;s:6:"markup";s:106:"<div class="container">
+</div>";s:5:"mtime";i:1479079828;s:6:"markup";s:828:"<div class="container">
     <div class="section">
         
         {% if not user %}
