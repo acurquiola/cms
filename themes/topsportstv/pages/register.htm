@@ -1,5 +1,5 @@
 title = "Register"
-url = "/register"
+url = "/register/:code"
 layout = "default"
 is_hidden = 0
 
@@ -16,26 +16,29 @@ redirect = "home"
         {% if not user %}
 
             <div class="row">
-                {% if not user %}
-
-                    <div class="row">
-                
-                        <div class="col-md-6">
-                            <h3>Registro</h3>
-                            {% partial account ~ '::register' %}
-                        </div>
-                
+            
+                <div class="wrap z-depth-2">
+                    <div class="wrap-content">
+                        
+                        {% if not user %}
+                                <div class="col-md-6">
+                                    <h3>Registro</h3>
+                                    <p>Completa el formulario de registro y revisa la bandeja de entrada de tu correo electrónico para confirmar tu correo. </p>
+                                    {% partial account ~ '::register' %}
+                                </div>
+                        
+                        
+                        {% else %}
+                        
+                            {% partial account ~ '::activation_check' %}
+                        
+                            {% partial account ~ '::update' %}
+                        
+                            {% partial account ~ '::deactivate_link' %}
+                        
+                        {% endif %}
                     </div>
-                
-                {% else %}
-                
-                    {% partial account ~ '::activation_check' %}
-                
-                    {% partial account ~ '::update' %}
-                
-                    {% partial account ~ '::deactivate_link' %}
-                
-                {% endif %}
+                </div>
             </div>
         
         {% endif %}

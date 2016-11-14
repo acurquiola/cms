@@ -17,9 +17,11 @@ security = "all"
 ==
 <div class="section" >
     <div class="container" >
-        {% content "planes.md" %}
-        </br>
-        {% partial "planes/planes" %}
-        {% content "formasPago.htm" %}
+        <div class="wrap z-depth-2">
+            <div class="wrap-content">   
+                {% partial "planes/planes" %}
+                {% content "formasPago.htm" %}
+            </div>
+        </div>
     </div>
 </div>
