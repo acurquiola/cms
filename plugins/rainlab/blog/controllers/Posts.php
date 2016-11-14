@@ -9,9 +9,6 @@ use RainLab\Blog\Models\Post;
 
 class Posts extends Controller
 {
-
-
-
     public $implement = [
         'Backend.Behaviors.FormController',
         'Backend.Behaviors.ListController',
@@ -33,8 +30,6 @@ class Posts extends Controller
 
     public function index()
     {
-
-
         $this->vars['postsTotal'] = Post::count();
         $this->vars['postsPublished'] = Post::isPublished()->count();
         $this->vars['postsDrafts'] = $this->vars['postsTotal'] - $this->vars['postsPublished'];
