@@ -12,7 +12,8 @@ security = "all"
 	</div>
 </div>
 
-    {% if inGroup('registered') %}
+    {% if inGroup('usuarios-premium') %}
+    {% else %}
         <div class="row">
         	<div class="col l12 m12 s12">
                 {% partial 'home/alertaVerPlanes' %}
