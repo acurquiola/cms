@@ -1,19 +1,20 @@
 title = "Blog"
-url = "/blog"
+url = "/blog/:page?"
 layout = "default"
-is_hidden = 0
+description = "The main blog page, with all posts."
+hidden = "0"
 
 [blogPosts]
 pageNumber = "{{ :page }}"
-postsPerPage = 2
-noPostsMessage = "No se encontraron registros"
+postsPerPage = "2"
+noPostsMessage = "No posts found"
 sortOrder = "published_at desc"
 categoryPage = "blog/categorias"
 postPage = "blog/post"
 
 [blogCategories]
 slug = "{{ :slug }}"
-displayEmpty = 0
+displayEmpty = "0"
 categoryPage = "blog/categorias"
 
 [session]
@@ -50,24 +51,25 @@ redirect = "home"
             {% else %}
                 <p>{{ noPostsMessage }}</p>
             {% endfor %}
-        
-            {% if posts.lastPage > 1 %}
-                <ul class="pagination">
-                    {% if posts.currentPage > 1 %}
-                        <li><a href="{{ this.page.baseFileName|page({ (pageParam): (posts.currentPage-1) }) }}">&larr; Prev</a></li>
-                    {% endif %}
-            
-                    {% for page in 1..posts.lastPage %}
-                        <li class="{{ posts.currentPage == page ? 'active' : null }}">
-                            <a href="{{ this.page.baseFileName|page({ (pageParam): page }) }}">{{ page }}</a>
-                        </li>
-                    {% endfor %}
-            
-                    {% if posts.lastPage > posts.currentPage %}
-                        <li><a href="{{ this.page.baseFileName|page({ (pageParam): (posts.currentPage+1) }) }}">Next &rarr;</a></li>
-                    {% endif %}
-                </ul>
-            {% endif %}
+            <div class="center-align">
+                {% if posts.lastPage > 1 %}
+                    <ul class="pagination">
+                        {% if posts.currentPage > 1 %}
+                            <li class="waves-effect"><a href="{{ this.page.baseFileName|page({ (pageParam): (posts.currentPage-1) }) }}">&larr; Prev</a></li>
+                        {% endif %}
+                
+                        {% for page in 1..posts.lastPage %}
+                            <li class=" waves-effect {{ posts.currentPage == page ? 'active' : null }}">
+                                <a href="{{ this.page.baseFileName|page({ (pageParam): page }) }}">{{ page }}</a>
+                            </li>
+                        {% endfor %}
+                
+                        {% if posts.lastPage > posts.currentPage %}
+                            <li class="waves-effect"><a href="{{ this.page.baseFileName|page({ (pageParam): (posts.currentPage+1) }) }}">Next &rarr;</a></li>
+                        {% endif %}
+                    </ul>
+                {% endif %}
+            </div>
     </div>
     <div class="card col s12 m2 l2 categorias-post">
         <h6 class="center"> CATEGORÍAS </h6>

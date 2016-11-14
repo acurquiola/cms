@@ -1,6 +1,5 @@
 <?php namespace RainLab\Blog\Components;
 
-use Redirect;
 use Cms\Classes\Page;
 use Cms\Classes\ComponentBase;
 use RainLab\Blog\Models\Post as BlogPost;
@@ -50,20 +49,23 @@ class Post extends ComponentBase
 
     public function onRun()
     {
-        $usersPremium = \KurtJensen\Passage\Plugin::hasGroup('usuarios-premium');
+         $usersPremium = \KurtJensen\Passage\Plugin::hasGroup('usuarios-premium');
 
         if ($usersPremium){
+
+            
+            
             $this->categoryPage = $this->page['categoryPage'] = $this->property('categoryPage');
             $this->post = $this->page['post'] = $this->loadPost();
+            
         }else{
             return Redirect::to('/');
         }
+
     }
 
     protected function loadPost()
     {
-
-
         $slug = $this->property('slug');
 
         $post = new BlogPost;

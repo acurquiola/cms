@@ -1,12 +1,13 @@
 title = "Blog Categorias"
-url = "/blog/categorias/:slug"
+url = "/blog/categorias/:slug/:page?"
 layout = "default"
-is_hidden = 0
+description = "Viewing blog posts in a specific category."
+hidden = "0"
 
 [blogPosts]
 pageNumber = "{{ :page }}"
-categoryFilter = ":slug"
-postsPerPage = 10
+categoryFilter = "{{ :slug }}"
+postsPerPage = "10"
 noPostsMessage = "No posts found"
 sortOrder = "published_at desc"
 categoryPage = "blog/categorias"
@@ -14,7 +15,7 @@ postPage = "blog/post"
 
 [blogCategories]
 slug = "{{ :slug }}"
-displayEmpty = 0
+displayEmpty = "0"
 categoryPage = "blog/categorias"
 
 [session]
