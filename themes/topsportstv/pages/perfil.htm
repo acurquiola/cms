@@ -12,14 +12,23 @@ redirect = "home"
 ==
 <div class="container">
     <div class="section">
-        {% if user %}
-
-            {% partial account ~ '::activation_check' %}
+        <div class="wrap z-depth-2">
+            <div class="wrap-content ">
+                {% if user %}
         
-            {% partial account ~ '::update' %}
-        
-            {% partial account ~ '::deactivate_link' %}
-        
-        {% endif %}
+                    <div class="right-align">
+                        {% partial account ~ '::activation_check' %}
+                    </div>
+                
+                    {% partial account ~ '::update' %}
+                    
+                    <div class="right-align">
+                        {% partial account ~ '::deactivate_link' %}
+                    </div>
+                
+                
+                {% endif %}
+            </div>
+        </div>
     </div>
 </div>
