@@ -9,7 +9,18 @@ navigation:
         label: Planes
         url: topsportstv/subscriptions/subscriptions
         icon: icon-ticket
+        permissions:
+            - gestion_planes
     gestionPagos:
         label: 'Gestión de Pagos'
         url: topsportstv/subscriptions/pagos
         icon: icon-credit-card
+        permissions:
+            - gestion_pagos
+permissions:
+    gestion_pagos:
+        tab: Pagos
+        label: 'Gestión de pagos recibidos'
+    gestion_planes:
+        tab: Planes
+        label: 'Gestión de planes disponibles'
