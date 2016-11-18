@@ -49,19 +49,8 @@ class Post extends ComponentBase
 
     public function onRun()
     {
-         $usersPremium = \KurtJensen\Passage\Plugin::hasGroup('usuarios-premium');
-
-        if ($usersPremium){
-
-            
-            
-            $this->categoryPage = $this->page['categoryPage'] = $this->property('categoryPage');
-            $this->post = $this->page['post'] = $this->loadPost();
-            
-        }else{
-            return Redirect::to('/');
-        }
-
+        $this->categoryPage = $this->page['categoryPage'] = $this->property('categoryPage');
+        $this->post = $this->page['post'] = $this->loadPost();
     }
 
     protected function loadPost()

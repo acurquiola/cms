@@ -11,17 +11,22 @@ security = "guest"
 redirect = "home"
 ==
 <div class="container" >
-
     <div class="section " >
+
         {% if not user %}
         
             <div class="row ">
                 <div class="wrap">
             
                     <div class="col-md-6 z-depth-2 wrap-content">
-                        <h3>Iniciar Sesión</h3>
+                        <h4>Iniciar Sesión</h4>
                         {% partial account ~ '::signin' %}
+                        
+                        <div class="right-align">
+                            <a href="{{'reiniciar-constrasena'|page}}">Olvidé mi contraseña</a>
+                        </div>
                     </div>
+                    
                 </div>
         
             </div>

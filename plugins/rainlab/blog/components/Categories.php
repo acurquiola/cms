@@ -64,17 +64,9 @@ class Categories extends ComponentBase
 
     public function onRun()
     {
-
-         $usersPremium = \KurtJensen\Passage\Plugin::hasGroup('usuarios-premium');
-
-        if ($usersPremium){
-            $this->currentCategorySlug = $this->page['currentCategorySlug'] = $this->property('slug');
-            $this->categoryPage = $this->page['categoryPage'] = $this->property('categoryPage');
-            $this->categories = $this->page['categories'] = $this->loadCategories();
-            
-        }else{
-            return Redirect::to('/');
-        }
+        $this->currentCategorySlug = $this->page['currentCategorySlug'] = $this->property('slug');
+        $this->categoryPage = $this->page['categoryPage'] = $this->property('categoryPage');
+        $this->categories = $this->page['categories'] = $this->loadCategories();
     }
 
     protected function loadCategories()

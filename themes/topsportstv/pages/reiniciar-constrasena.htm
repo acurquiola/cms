@@ -1,5 +1,5 @@
 title = "Reiniciar Constraseña"
-url = "/reiniciar-constrasena"
+url = "/reiniciar-constrasena/:code?"
 layout = "default"
 is_hidden = 0
 
@@ -9,15 +9,28 @@ paramCode = "code"
 <div class="container" >
 
     <div class="section" >
+        
     
         {% if not user %}
 
             <div class="row">
+            
+                <div class="wrap z-depth-2">
+                    <div class="wrap-content">
         
-                <div class="col-md-6">
-                
-                    {% component 'resetPassword' %}
-
+                        <div class="col-md-6">
+                        
+                            <div id="partialUserResetForm">
+                                {% if resetPassword.code == null %}
+                                    {% partial resetPassword ~ '::restore' %}
+                                {% else %}
+                                    {% partial resetPassword ~ '::reset' %}
+                                {% endif %}
+                            </div>
+        
+                        </div>
+                        
+                    </div>
                 </div>
    
             </div>

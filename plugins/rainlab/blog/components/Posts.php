@@ -127,17 +127,10 @@ class Posts extends ComponentBase
 
     public function onRun()
     {
+        $this->prepareVars();
 
-
-        $usersPremium = \KurtJensen\Passage\Plugin::hasGroup('usuarios-premium');
-
-        if ($usersPremium){
-
-
-            $this->prepareVars();
-
-            $this->category = $this->page['category'] = $this->loadCategory();
-            $this->posts = $this->page['posts'] = $this->listPosts();
+        $this->category = $this->page['category'] = $this->loadCategory();
+        $this->posts = $this->page['posts'] = $this->listPosts();
 
         /*
          * If the page number is not valid, redirect
@@ -148,13 +141,6 @@ class Posts extends ComponentBase
             if ($currentPage > ($lastPage = $this->posts->lastPage()) && $currentPage > 1)
                 return Redirect::to($this->currentPageUrl([$pageNumberParam => $lastPage]));
         }
-        
-        }else{
-            return Redirect::to('/');
-        }
-
-
-
     }
 
     protected function prepareVars()
