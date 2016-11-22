@@ -8,30 +8,30 @@ description = "Listado de los planes de suscripción"
         {% set detailsUrlParameter = builderList.detailsUrlParameter %}
 
        <div class="w-table">
-                <div class="w-container">
-                    {% for record in records %}
-                        {# Use spaceless tag to remove spaces inside the A tag. #}
-             
-                                <div class="w-card color-teal s12 m3 l3">
-                                    <div class="card-header">
-                                        <div class="w-title">
-                                            <b>{{ record.nombre }}</b>
-                                        </div>
-                                        <div class="w-price">
-                                            $ {{ record.precio }}
-                                        </div>
-                                        <div class="container-button">
-                                            <a class="w-button" href="#" target="_blank"> Contratar </a>
-                                        </div>
-                                    </div>
-                                    <div class="card-content">
-                                        {{ record.descripcion }}
-                                    </div>
+            <div class="w-container">
+                {% for record in records %}
+                    {# Use spaceless tag to remove spaces inside the A tag. #}
+     
+                        <div class="w-card color-teal s12 m3 l3">
+                            <div class="card-header">
+                                <div class="w-title">
+                                    <b>{{ record.nombre }}</b>
                                 </div>
+                                <div class="w-price">
+                                    $ {{ record.precio }}
+                                </div>
+                                <div class="container-button">
+                                    <a class="w-button" href="{{ 'pagos/registrar'|page({ subscriptions_id: record.id })}}" target="_blank"> Contratar </a>
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                {{ record.descripcion }}
+                            </div>
+                        </div>
 
-            {% else %}
+                {% else %}
                 <li class="no-data">{{ noRecordsMessage }}</li>
-            {% endfor %}
+                {% endfor %}
 
             </div>
         </div>

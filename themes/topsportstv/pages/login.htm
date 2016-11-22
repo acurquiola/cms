@@ -3,12 +3,20 @@ url = "/login"
 layout = "default"
 is_hidden = 0
 
-[account]
-paramCode = "code"
-
 [session session2]
 security = "guest"
 redirect = "home"
+
+[account]
+redirect = "home"
+paramCode = "code"
+==
+<?php
+public function onCheckEmail()
+{
+    return ['isTaken' => Auth::findUserByLogin(post('email')) ? 1 : 0];
+}
+?>
 ==
 <div class="container" >
     <div class="section " >
@@ -24,6 +32,9 @@ redirect = "home"
                         
                         <div class="right-align">
                             <a href="{{'reiniciar-constrasena'|page}}">Olvidé mi contraseña</a>
+                        </div>
+                        <div id="loginTaken" class="alert alert-danger" style="display: none">
+                            Sorry, that login name is already taken.
                         </div>
                     </div>
                     

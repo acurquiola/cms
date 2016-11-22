@@ -7,6 +7,9 @@
             type="text"
             class="form-control"
             id="userSigninLogin"
+            data-request="onCheckEmail"
+            data-request-success="$('#loginTaken').toggle(!!data.isTaken)"
+            data-track-input
             placeholder="Enter your {{ loginAttributeLabel|lower }}" />
     </div>
 
