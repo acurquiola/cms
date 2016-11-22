@@ -1,0 +1,24 @@
+title = "Pagos Registrar"
+url = "/pagos/registrar/:subscriptions_id"
+layout = "default"
+is_hidden = 0
+
+[PagosForm]
+
+[session]
+security = "user"
+redirect = "login"
+==
+<div class="container" >
+    <div class="section " >        
+        <div class="row ">
+            <div class="wrap">
+                <div class="col-md-6 z-depth-2 wrap-content">
+                    <h4>Registro de Pago</h4>
+                    </br>
+                    {% component 'PagosForm' %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -3,13 +3,13 @@ url = "/login"
 layout = "default"
 is_hidden = 0
 
-[account]
-redirect = "home"
-paramCode = "code"
-
 [session session2]
 security = "guest"
 redirect = "home"
+
+[account]
+redirect = "home"
+paramCode = "code"
 ==
 <?php
 public function onCheckEmail()
@@ -32,6 +32,9 @@ public function onCheckEmail()
                         
                         <div class="right-align">
                             <a href="{{'reiniciar-constrasena'|page}}">Olvidé mi contraseña</a>
+                        </div>
+                        <div id="loginTaken" class="alert alert-danger" style="display: none">
+                            Sorry, that login name is already taken.
                         </div>
                     </div>
                     

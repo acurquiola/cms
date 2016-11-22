@@ -15,7 +15,7 @@ fields:
         span: auto
         required: 1
         type: relation
-    fecha:
+    fecha_pago:
         label: 'Fecha de Pago'
         oc.commentPosition: ''
         mode: date
@@ -29,6 +29,28 @@ fields:
         span: auto
         required: 1
         type: number
+    fecha_inicio:
+        label: 'Fecha Inicio'
+        oc.commentPosition: ''
+        mode: date
+        span: auto
+        required: 1
+        defaultFrom: fecha
+        trigger:
+            action: ''
+            field: fecha
+        preset:
+            field: fecha_pago
+            type: camel
+        type: datepicker
+    fecha_fin:
+        label: 'Fecha Culminación'
+        oc.commentPosition: ''
+        mode: date
+        span: auto
+        placeholder: ''
+        required: 1
+        type: datepicker
     metodo_pago:
         label: 'Método de Pago'
         oc.commentPosition: ''

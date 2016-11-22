@@ -1,0 +1,50 @@
+<form data-request="onSave" class="form-control ">
+    <div class="form-group col s12 m12 l12">
+        <label class="col s3 m3 l3" ><b>FORMA DE PAGO</b></label>
+        <div class="radio custom-radio col s5 m5 l5">
+            <input name="metodo_pago" value="transferencia" type="radio" id="radio_1">
+            <label for="radio_1">Transferencia Bancaria</label>
+            <input name="metodo_pago" value="deposito" type="radio" id="radio_2">
+            <label for="radio_2">Depósito Bancario</label>
+        </div>
+    </div>
+
+    <div class="form-group col s12 m12 l12">
+        <label class="col s3 m3 l3" ><b>MONTO</b></label>
+        <input type="number" class="col s5 m5 l5 right-align" name="monto">
+    </div>
+
+    <div class="form-group col s12 m12 l12">
+        <label class="col s3 m3 l3" ><b>REFERENCIA</b></label>
+    <input type="text" class="col s5 m5 l5 " name="nro_referencia">
+    </div>
+
+    <div class="form-group col s12 m12 l12">
+        <label class="col s3 m3 l3" ><b>FECHA DE PAGO</b></label>
+        <input type="text" class="col s5 m5 l5 " name="fecha_pago">
+    </div>
+
+
+
+    <div class="form-group col s12 m12 l12">
+        <label class="col s3 m3 l3" ><b>PLAN</b></label>
+        <div class="radio custom-radio col s3 m3 l3">
+            <input name="subscriptions_id " value="1" type="radio" id="plan_mensual-radio">
+            <label for="plan_mensual-radio">Plan Mensual</label>
+            <input name="subscriptions_id" value="2" type="radio" id="plan_trimestral-radio">
+            <label for="plan_trimestral-radio">Plan Trimestral</label>
+            <input name="subscriptions_id" value="3" type="radio" id="plan_semestral-radio">
+            <label for="plan_semestral-radio">Plan Semestral</label>
+            <input name="subscriptions_id" value="3" type="radio" id="plan_anual-radio">
+            <label for="plan_anual-radio">Plan Anual</label>
+        </div>
+    </div>
+    <div class="right-align">
+        <button type="submit" class="btn btn-default">Enviar</button>
+    </div>
+
+    {% flash success %}
+        <p>{{ message }}</p>
+    {% endflash %}
+</form>
+
