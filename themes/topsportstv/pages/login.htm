@@ -4,11 +4,19 @@ layout = "default"
 is_hidden = 0
 
 [account]
+redirect = "home"
 paramCode = "code"
 
 [session session2]
 security = "guest"
 redirect = "home"
+==
+<?php
+public function onCheckEmail()
+{
+    return ['isTaken' => Auth::findUserByLogin(post('email')) ? 1 : 0];
+}
+?>
 ==
 <div class="container" >
     <div class="section " >
