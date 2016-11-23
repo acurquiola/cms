@@ -1,0 +1,59 @@
+1479864156a:1:{s:10:"perfil.htm";a:11:{s:8:"fileName";s:10:"perfil.htm";s:7:"content";s:857:"title = "Perfil"
+url = "/perfil"
+layout = "default"
+is_hidden = 0
+
+[account]
+paramCode = "code"
+
+[session]
+security = "user"
+redirect = "home"
+==
+<div class="container">
+    <div class="section">
+        <div class="wrap z-depth-2">
+            <div class="wrap-content ">
+                {% if user %}
+                
+                    <h3>Tu cuenta</h3>
+        
+                    <div class="right-align">
+                        {% partial account ~ '::activation_check' %}
+                    </div>
+                
+                    {% partial account ~ '::update' %}
+                    
+                    <div class="right-align">
+                        {% partial account ~ '::deactivate_link' %}
+                    </div>
+                
+                
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>";s:5:"mtime";i:1479450114;s:6:"markup";s:711:"<div class="container">
+    <div class="section">
+        <div class="wrap z-depth-2">
+            <div class="wrap-content ">
+                {% if user %}
+                
+                    <h3>Tu cuenta</h3>
+        
+                    <div class="right-align">
+                        {% partial account ~ '::activation_check' %}
+                    </div>
+                
+                    {% partial account ~ '::update' %}
+                    
+                    <div class="right-align">
+                        {% partial account ~ '::deactivate_link' %}
+                    </div>
+                
+                
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>";s:4:"code";N;s:5:"title";s:6:"Perfil";s:3:"url";s:7:"/perfil";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:7:"account";a:1:{s:9:"paramCode";s:4:"code";}s:7:"session";a:2:{s:8:"security";s:4:"user";s:8:"redirect";s:4:"home";}}}

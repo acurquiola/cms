@@ -1,0 +1,92 @@
+1479864156a:1:{s:9:"login.htm";a:11:{s:8:"fileName";s:9:"login.htm";s:7:"content";s:1429:"title = "Login"
+url = "/login"
+layout = "default"
+is_hidden = 0
+
+[session session2]
+security = "guest"
+redirect = "home"
+
+[account]
+redirect = "home"
+paramCode = "code"
+==
+<?php
+public function onCheckEmail()
+{
+    return ['isTaken' => Auth::findUserByLogin(post('email')) ? 1 : 0];
+}
+?>
+==
+<div class="container" >
+    <div class="section " >
+
+        {% if not user %}
+        
+            <div class="row ">
+                <div class="wrap">
+            
+                    <div class="col-md-6 z-depth-2 wrap-content">
+                        <h4>Iniciar Sesión</h4>
+                        {% partial account ~ '::signin' %}
+                        
+                        <div class="right-align">
+                            <a href="{{'reiniciar-constrasena'|page}}">Olvidé mi contraseña</a>
+                        </div>
+                        <div id="loginTaken" class="alert alert-danger" style="display: none">
+                            Sorry, that login name is already taken.
+                        </div>
+                    </div>
+                    
+                </div>
+        
+            </div>
+        
+        {% else %}
+        
+            {% partial account ~ '::activation_check' %}
+        
+            {% partial account ~ '::update' %}
+        
+            {% partial account ~ '::deactivate_link' %}
+        
+        {% endif %}
+    </div>
+</div>";s:5:"mtime";i:1479851891;s:6:"markup";s:1135:"<div class="container" >
+    <div class="section " >
+
+        {% if not user %}
+        
+            <div class="row ">
+                <div class="wrap">
+            
+                    <div class="col-md-6 z-depth-2 wrap-content">
+                        <h4>Iniciar Sesión</h4>
+                        {% partial account ~ '::signin' %}
+                        
+                        <div class="right-align">
+                            <a href="{{'reiniciar-constrasena'|page}}">Olvidé mi contraseña</a>
+                        </div>
+                        <div id="loginTaken" class="alert alert-danger" style="display: none">
+                            Sorry, that login name is already taken.
+                        </div>
+                    </div>
+                    
+                </div>
+        
+            </div>
+        
+        {% else %}
+        
+            {% partial account ~ '::activation_check' %}
+        
+            {% partial account ~ '::update' %}
+        
+            {% partial account ~ '::deactivate_link' %}
+        
+        {% endif %}
+    </div>
+</div>";s:4:"code";s:109:"public function onCheckEmail()
+{
+    return ['isTaken' => Auth::findUserByLogin(post('email')) ? 1 : 0];
+}";s:5:"title";s:5:"Login";s:3:"url";s:6:"/login";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:16:"session session2";a:2:{s:8:"security";s:5:"guest";s:8:"redirect";s:4:"home";}s:7:"account";a:2:{s:8:"redirect";s:4:"home";s:9:"paramCode";s:4:"code";}}}
