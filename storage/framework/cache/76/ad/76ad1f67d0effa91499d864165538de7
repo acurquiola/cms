@@ -1,0 +1,80 @@
+1479864156a:1:{s:12:"register.htm";a:11:{s:8:"fileName";s:12:"register.htm";s:7:"content";s:1398:"title = "Register"
+url = "/register/:code"
+layout = "default"
+is_hidden = 0
+
+[account]
+redirect = "home"
+paramCode = "code"
+
+[session]
+security = "guest"
+redirect = "confirmacion"
+==
+<div class="container">
+    <div class="section">
+        
+        {% if not user %}
+
+            <div class="row">
+            
+                <div class="wrap z-depth-2">
+                    <div class="wrap-content">
+                        
+                        {% if not user %}
+                                <div class="col-md-6">
+                                    <h4>Registro</h4>
+                                    <p>Completa el formulario de registro y revisa la bandeja de entrada de tu correo electrónico para confirmar tu correo. </p>
+                                    {% partial account ~ '::register' %}
+                                </div>
+                        
+                        
+                        {% else %}
+                        
+                            {% partial account ~ '::activation_check' %}
+                        
+                            {% partial account ~ '::update' %}
+                        
+                            {% partial account ~ '::deactivate_link' %}
+                        
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        
+        {% endif %}
+    </div>
+</div>";s:5:"mtime";i:1479450114;s:6:"markup";s:1215:"<div class="container">
+    <div class="section">
+        
+        {% if not user %}
+
+            <div class="row">
+            
+                <div class="wrap z-depth-2">
+                    <div class="wrap-content">
+                        
+                        {% if not user %}
+                                <div class="col-md-6">
+                                    <h4>Registro</h4>
+                                    <p>Completa el formulario de registro y revisa la bandeja de entrada de tu correo electrónico para confirmar tu correo. </p>
+                                    {% partial account ~ '::register' %}
+                                </div>
+                        
+                        
+                        {% else %}
+                        
+                            {% partial account ~ '::activation_check' %}
+                        
+                            {% partial account ~ '::update' %}
+                        
+                            {% partial account ~ '::deactivate_link' %}
+                        
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        
+        {% endif %}
+    </div>
+</div>";s:4:"code";N;s:5:"title";s:8:"Register";s:3:"url";s:15:"/register/:code";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:7:"account";a:2:{s:8:"redirect";s:4:"home";s:9:"paramCode";s:4:"code";}s:7:"session";a:2:{s:8:"security";s:5:"guest";s:8:"redirect";s:12:"confirmacion";}}}
