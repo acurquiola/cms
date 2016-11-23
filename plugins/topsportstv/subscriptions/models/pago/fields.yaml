@@ -56,7 +56,7 @@ fields:
         oc.commentPosition: ''
         options:
             transferencia: Transferencia
-            depósito: Depósito
+            deposito: Depósito
             paypal: Paypal
         span: auto
         required: 1

@@ -8,6 +8,7 @@ use Redirect;
 use TopSportsTv\Subscriptions\Models\Pago;
 use RainLab\User\Models\User;
 use Flash;
+use ValidationException;
 
 class PagosForm extends ComponentBase
 {
@@ -20,6 +21,26 @@ class PagosForm extends ComponentBase
 	}
 
 	public function onSave(){
+
+        /*
+         * Validate input
+         */
+        $data = post();
+
+        $rules = [
+			'metodo_pago'      => 'required',
+			'nro_referencia'   => 'required',
+			'monto'            => 'required',
+			'subscriptions_id' => 'required',
+			'fecha_pago'       => 'required',
+        ];
+
+        $validation = Validator::make($data, $rules);
+        if ($validation->fails()) {
+            throw new ValidationException($validation);
+        }
+
+
 		$pago                   = new Pago();
 		$pago->metodo_pago      = Input::get('metodo_pago');
 		$pago->nro_referencia   = Input::get('nro_referencia');
@@ -29,7 +50,7 @@ class PagosForm extends ComponentBase
 		$pago->users_id         = Auth::getUser()->id;
 		$pago->save();
       // Flash::success('¡Pago registrado exitósamente!');
-		return Redirect::back();
+		return Redirect::intended('/');
 	}
 
 }
