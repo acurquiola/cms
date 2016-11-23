@@ -3,11 +3,21 @@ url = "/pagos/registrar/:subscriptions_id"
 layout = "default"
 is_hidden = 0
 
-[PagosForm]
-
 [session]
 security = "user"
 redirect = "login"
+
+[builderList]
+modelClass = "TopSportsTv\Subscriptions\Models\Subscription"
+scope = "-"
+displayColumn = "nombre"
+noRecordsMessage = "No records found"
+detailsPage = "-"
+detailsUrlParameter = "id"
+pageNumber = "{{ :page }}"
+sortDirection = "asc"
+
+[PagosForm]
 ==
 <div class="container" >
     <div class="section " >        

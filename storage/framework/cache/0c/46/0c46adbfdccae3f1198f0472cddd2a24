@@ -1,4 +1,4 @@
-1479091187a:1:{s:11:"contact.htm";a:11:{s:8:"fileName";s:11:"contact.htm";s:7:"content";s:395:"title = "Contact"
+1479866655a:1:{s:11:"contact.htm";a:11:{s:8:"fileName";s:11:"contact.htm";s:7:"content";s:3166:"title = "Contact"
 url = "/contact"
 layout = "default"
 is_hidden = 0
@@ -17,10 +17,118 @@ security = "all"
 ==
 <div class="container">
     <div class="section">
-        {% component 'simpleContact' %}
+        <div class="wrap z-depth-2">
+            <div class="wrap-content">
+                <h4>Contáctanos</h4>
+                {{ simpleContact.settings.text_top_form|raw}}
+
+                <form id="simpleContactForm">
+                
+                    <div id="simple_contact_flash_message"></div>
+                
+                
+                    <div class="form-group">
+                        <label for="name">{{simpleContact.properties.nameLabel}}</label>
+                        <input type="text" id="name" name="name" class="form-control" required >
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="email">{{simpleContact.properties.emailLabel}}</label>
+                        <input type="email" id="email" name="email" class="form-control" required >
+                    </div>
+                
+                    {% if(simpleContact.properties.phoneEnabled) %}
+                        <div class="form-group">
+                            <label for="phone">{{simpleContact.properties.phoneLabel}}</label>
+                            <input type="text" id="phone" name="phone" class="form-control"  >
+                        </div>
+                    {% endif %}
+                
+                    <div class="form-group">
+                        <label for="subject">{{simpleContact.properties.subjectLabel}}</label>
+                        <input type="text" id="subject" name="subject" class="form-control"  >
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="message">{{simpleContact.properties.messageLabel}}</label>
+                        <textarea id="message" name="message" class="form-control"></textarea>
+                    </div>
+                
+                    <!-- Injecting reCaptcha if enabled -->
+                    {% if(simpleContact.settings.recaptcha_enabled) %}
+                        <div class="form-group">
+                            <label for="message"></label>
+                            <div class="g-recaptcha" data-sitekey="{{simpleContact.settings.recaptcha_site_key}}"></div>
+                        </div>
+                    {% endif %}
+                    <!-- End reCaptcha -->
+                    <div class="right-align">    
+                        <button id="simpleContactSubmitButton"
+                                data-request="{{ simpleContact }}::onFormSubmit"
+                                type="submit" class="btn btn-default">
+                            {{simpleContact.properties.buttonText}}
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
-</div>";s:5:"mtime";i:1478484277;s:6:"markup";s:111:"<div class="container">
+</div>";s:5:"mtime";i:1479095925;s:6:"markup";s:2882:"<div class="container">
     <div class="section">
-        {% component 'simpleContact' %}
+        <div class="wrap z-depth-2">
+            <div class="wrap-content">
+                <h4>Contáctanos</h4>
+                {{ simpleContact.settings.text_top_form|raw}}
+
+                <form id="simpleContactForm">
+                
+                    <div id="simple_contact_flash_message"></div>
+                
+                
+                    <div class="form-group">
+                        <label for="name">{{simpleContact.properties.nameLabel}}</label>
+                        <input type="text" id="name" name="name" class="form-control" required >
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="email">{{simpleContact.properties.emailLabel}}</label>
+                        <input type="email" id="email" name="email" class="form-control" required >
+                    </div>
+                
+                    {% if(simpleContact.properties.phoneEnabled) %}
+                        <div class="form-group">
+                            <label for="phone">{{simpleContact.properties.phoneLabel}}</label>
+                            <input type="text" id="phone" name="phone" class="form-control"  >
+                        </div>
+                    {% endif %}
+                
+                    <div class="form-group">
+                        <label for="subject">{{simpleContact.properties.subjectLabel}}</label>
+                        <input type="text" id="subject" name="subject" class="form-control"  >
+                    </div>
+                
+                    <div class="form-group">
+                        <label for="message">{{simpleContact.properties.messageLabel}}</label>
+                        <textarea id="message" name="message" class="form-control"></textarea>
+                    </div>
+                
+                    <!-- Injecting reCaptcha if enabled -->
+                    {% if(simpleContact.settings.recaptcha_enabled) %}
+                        <div class="form-group">
+                            <label for="message"></label>
+                            <div class="g-recaptcha" data-sitekey="{{simpleContact.settings.recaptcha_site_key}}"></div>
+                        </div>
+                    {% endif %}
+                    <!-- End reCaptcha -->
+                    <div class="right-align">    
+                        <button id="simpleContactSubmitButton"
+                                data-request="{{ simpleContact }}::onFormSubmit"
+                                type="submit" class="btn btn-default">
+                            {{simpleContact.properties.buttonText}}
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 </div>";s:4:"code";N;s:5:"title";s:7:"Contact";s:3:"url";s:8:"/contact";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";s:13:"simpleContact";a:7:{s:9:"nameTitle";s:6:"Nombre";s:10:"emailTitle";s:5:"Email";s:10:"phoneTitle";s:5:"Phone";s:12:"subjectTitle";s:6:"Asunto";s:12:"messageTitle";s:7:"Mensaje";s:10:"buttonText";s:6:"Enviar";s:12:"displayPhone";s:1:"0";}s:7:"session";a:1:{s:8:"security";s:3:"all";}}}

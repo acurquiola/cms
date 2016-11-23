@@ -1,9 +1,8 @@
-1479091187a:1:{s:13:"blog/post.htm";a:12:{s:8:"fileName";s:13:"blog/post.htm";s:7:"content";s:1989:"
-title = "Blog Post"
+1479866655a:1:{s:13:"blog/post.htm";a:13:{s:8:"fileName";s:13:"blog/post.htm";s:7:"content";s:2064:"title = "Blog Post"
 url = "/blog/post/:slug"
 layout = "default"
 description = "Viewing a single blog post"
-hidden = "0"
+is_hidden = 0
 
 [blogPost]
 slug = "{{ :slug }}"
@@ -12,6 +11,12 @@ categoryPage = "blog/categorias"
 [session]
 security = "user"
 redirect = "home"
+
+[blogCategories]
+slug = "{{ :slug }}"
+displayEmpty = "0"
+categoryPage = "blog/categorias"
+
 ==
 <?php
 function onEnd()
@@ -20,9 +25,7 @@ function onEnd()
 }
 ?>
 ==
-<div class="section">
 	<div class="row">
-		
 		<div class="col s12 m8 l8">
 			<div class="card post">
 			
@@ -59,22 +62,20 @@ function onEnd()
 			</div>
 		</div>
 		
-    <div class="card col s12 m2 l2 categorias-post">
-        <h6 class="center"> CATEGORÍAS </h6>
-        {% if blogCategories.categories %}
-            <ul class="category-list">
-                {% partial blogCategories ~ "::items"
-                    categories = blogCategories.categories
-                    currentCategorySlug = blogCategories.currentCategorySlug
-                %}
-            </ul>
-        {% endif %}
+    	<div class="card col s12 m2 l2 categorias-post">
+	        <h6 class="center"> CATEGORÍAS </h6>
+	        {% if blogCategories.categories %}
+	            <ul class="category-list">
+	                {% partial blogCategories ~ "::items"
+	                    categories = blogCategories.categories
+	                    currentCategorySlug = blogCategories.currentCategorySlug
+	                %}
+	            </ul>
+	        {% endif %}
 
-    </div>
+	    </div>
 	</div>
-</div>";s:5:"mtime";i:1479090574;s:6:"markup";s:1650:"<div class="section">
-	<div class="row">
-		
+";s:5:"mtime";i:1479091260;s:6:"markup";s:1625:"<div class="row">
 		<div class="col s12 m8 l8">
 			<div class="card post">
 			
@@ -111,20 +112,19 @@ function onEnd()
 			</div>
 		</div>
 		
-    <div class="card col s12 m2 l2 categorias-post">
-        <h6 class="center"> CATEGORÍAS </h6>
-        {% if blogCategories.categories %}
-            <ul class="category-list">
-                {% partial blogCategories ~ "::items"
-                    categories = blogCategories.categories
-                    currentCategorySlug = blogCategories.currentCategorySlug
-                %}
-            </ul>
-        {% endif %}
+    	<div class="card col s12 m2 l2 categorias-post">
+	        <h6 class="center"> CATEGORÍAS </h6>
+	        {% if blogCategories.categories %}
+	            <ul class="category-list">
+	                {% partial blogCategories ~ "::items"
+	                    categories = blogCategories.categories
+	                    currentCategorySlug = blogCategories.currentCategorySlug
+	                %}
+	            </ul>
+	        {% endif %}
 
-    </div>
-	</div>
-</div>";s:4:"code";s:70:"function onEnd()
+	    </div>
+	</div>";s:4:"code";s:70:"function onEnd()
 {
     $this->page->title = $this['post']->title;
-}";s:5:"title";s:9:"Blog Post";s:3:"url";s:16:"/blog/post/:slug";s:6:"layout";s:7:"default";s:11:"description";s:26:"Viewing a single blog post";s:6:"hidden";s:1:"0";s:8:"blogPost";a:2:{s:4:"slug";s:11:"{{ :slug }}";s:12:"categoryPage";s:15:"blog/categorias";}s:7:"session";a:2:{s:8:"security";s:4:"user";s:8:"redirect";s:4:"home";}}}
+}";s:5:"title";s:9:"Blog Post";s:3:"url";s:16:"/blog/post/:slug";s:6:"layout";s:7:"default";s:11:"description";s:26:"Viewing a single blog post";s:9:"is_hidden";s:1:"0";s:8:"blogPost";a:2:{s:4:"slug";s:11:"{{ :slug }}";s:12:"categoryPage";s:15:"blog/categorias";}s:7:"session";a:2:{s:8:"security";s:4:"user";s:8:"redirect";s:4:"home";}s:14:"blogCategories";a:3:{s:4:"slug";s:11:"{{ :slug }}";s:12:"displayEmpty";s:1:"0";s:12:"categoryPage";s:15:"blog/categorias";}}}

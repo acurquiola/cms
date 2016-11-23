@@ -1,0 +1,6 @@
+1479792038a:1:{s:19:"pagos-registrar.htm";a:9:{s:8:"fileName";s:19:"pagos-registrar.htm";s:7:"content";s:119:"title = "Pagos Registrar"
+url = "/pagos/registrar"
+layout = "default"
+is_hidden = 0
+==
+{% component "PagosForm" %}";s:5:"mtime";i:1479791436;s:6:"markup";s:27:"{% component "PagosForm" %}";s:4:"code";N;s:5:"title";s:15:"Pagos Registrar";s:3:"url";s:16:"/pagos/registrar";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}

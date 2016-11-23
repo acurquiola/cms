@@ -1,5 +1,8 @@
 <?php 
-class Cms5829021b6be82365163869_966411316Class extends \Cms\Classes\PageCode
+class Cms5832a9672f097574983558_1581370093Class extends \Cms\Classes\PageCode
 {
-
+public function onCheckEmail()
+{
+    return ['isTaken' => Auth::findUserByLogin(post('email')) ? 1 : 0];
+}
 }
