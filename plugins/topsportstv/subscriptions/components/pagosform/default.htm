@@ -1,22 +1,22 @@
 <div class="row">
 	<form data-request="onSave" class="form-control col s12">
-		<div class="input-field col s4">
-			<input placeholder="Monto depositado" id="monto-input" type="number" name="monto" class="validate" required>
+		<div class="input-field col s12 m4 l4">
+			<input placeholder="Monto depositado" id="monto-input" type="number" name="monto" readonly class="right-align" required>
 			<label for="monto-input"><b>MONTO</b></label>
 		</div>
-		<div class="input-field col s4">
+		<div class="input-field col s12 m4 l4 ">
 			<input placeholder="Código de Referencia" id="nro_referencia-input" name="nro_referencia" type="text" class="validate" >
 			<label for="nro_referencia-input"><b>REFERENCIA</b></label>
 		</div>
-		<div class="input-field col s4">
+		<div class="input-field col s12 m4 l4">
 			<input placeholder="Fecha del depósito" id="fecha_pago-input" name="fecha_pago" type="date" class="datepicker" required>
 			<label for="fecha_pago-input"><b>FECHA</b></label>
 		</div>
 		<input id="plan_id-input" type="hidden" value="{{ this.param.subscriptions_id }}">
-		<div class="input-field col s6">
+		<div class="input-field col s12 m6 l6">
 			<select name="metodo_pago" required>
 				<option value="" disabled selected> Seleccione Forma de Pago</option>
-				<option value="trasnferencia">Transferencia Bancaria</option>
+				<option value="transferencia">Transferencia Bancaria</option>
 				<option value="deposito">Depósito Bancario</option>
 				</select>
 			<label for="metodo_pago"><b>FORMA DE PAGO</b></label>
@@ -28,10 +28,10 @@
 		{% set detailsKeyColumn = builderList.detailsKeyColumn %}
 		{% set detailsUrlParameter = builderList.detailsUrlParameter %}
 		
-		<div class="input-field col s6">
+		<div class="input-field col s12 m6 l6">
 			<select name="subscriptions_id" id="subscriptions_id-select" required>
 				{% for record in records %}
-				<option value="{{ record.id }}">{{ record.nombre }}</option>
+				<option data-precio="{{ record.precio }}" value="{{ record.id }}">{{ record.nombre }}</option>
 				{% else %}
 				<option disabled selected value="">Ningún plan seleccionado</option>
 				{% endfor %}

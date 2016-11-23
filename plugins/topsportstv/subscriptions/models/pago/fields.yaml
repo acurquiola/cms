@@ -29,28 +29,6 @@ fields:
         span: auto
         required: 1
         type: number
-    fecha_inicio:
-        label: 'Fecha Inicio'
-        oc.commentPosition: ''
-        mode: date
-        span: auto
-        required: 1
-        defaultFrom: fecha
-        trigger:
-            action: ''
-            field: fecha
-        preset:
-            field: fecha_pago
-            type: camel
-        type: datepicker
-    fecha_fin:
-        label: 'Fecha Culminación'
-        oc.commentPosition: ''
-        mode: date
-        span: auto
-        placeholder: ''
-        required: 1
-        type: datepicker
     metodo_pago:
         label: 'Método de Pago'
         oc.commentPosition: ''
@@ -61,3 +39,19 @@ fields:
         span: auto
         required: 1
         type: radio
+tabs:
+    fields:
+        fecha_inicio:
+            label: 'Fecha Inicio'
+            oc.commentPosition: ''
+            mode: date
+            span: auto
+            type: datepicker
+            tab: 'Datos de Activación'
+        fecha_fin:
+            label: 'Fecha Culminación'
+            oc.commentPosition: ''
+            mode: date
+            span: auto
+            type: datepicker
+            tab: 'Datos de Activación'
