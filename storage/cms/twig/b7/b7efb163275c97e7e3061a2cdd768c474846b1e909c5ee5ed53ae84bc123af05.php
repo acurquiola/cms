@@ -18,15 +18,15 @@ class __TwigTemplate_4949d90b9f0ea60ddb43cc6d0989749d62d07c6bf253eaf623c4ad046a4
         // line 1
         echo "<div class=\"row\">
 \t<form data-request=\"onSave\" class=\"form-control col s12\">
-\t\t<div class=\"input-field col s4\">
-\t\t\t<input placeholder=\"Monto depositado\" id=\"monto-input\" type=\"number\" name=\"monto\" class=\"validate\" required>
+\t\t<div class=\"input-field col s12 m4 l4\">
+\t\t\t<input placeholder=\"Monto depositado\" id=\"monto-input\" type=\"number\" name=\"monto\" readonly class=\"right-align\" required>
 \t\t\t<label for=\"monto-input\"><b>MONTO</b></label>
 \t\t</div>
-\t\t<div class=\"input-field col s4\">
+\t\t<div class=\"input-field col s12 m4 l4 \">
 \t\t\t<input placeholder=\"Código de Referencia\" id=\"nro_referencia-input\" name=\"nro_referencia\" type=\"text\" class=\"validate\" >
 \t\t\t<label for=\"nro_referencia-input\"><b>REFERENCIA</b></label>
 \t\t</div>
-\t\t<div class=\"input-field col s4\">
+\t\t<div class=\"input-field col s12 m4 l4\">
 \t\t\t<input placeholder=\"Fecha del depósito\" id=\"fecha_pago-input\" name=\"fecha_pago\" type=\"date\" class=\"datepicker\" required>
 \t\t\t<label for=\"fecha_pago-input\"><b>FECHA</b></label>
 \t\t</div>
@@ -34,10 +34,10 @@ class __TwigTemplate_4949d90b9f0ea60ddb43cc6d0989749d62d07c6bf253eaf623c4ad046a4
         // line 15
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["this"]) ? $context["this"] : null), "param", array()), "subscriptions_id", array()), "html", null, true);
         echo "\">
-\t\t<div class=\"input-field col s6\">
+\t\t<div class=\"input-field col s12 m6 l6\">
 \t\t\t<select name=\"metodo_pago\" required>
 \t\t\t\t<option value=\"\" disabled selected> Seleccione Forma de Pago</option>
-\t\t\t\t<option value=\"trasnferencia\">Transferencia Bancaria</option>
+\t\t\t\t<option value=\"transferencia\">Transferencia Bancaria</option>
 \t\t\t\t<option value=\"deposito\">Depósito Bancario</option>
 \t\t\t\t</select>
 \t\t\t<label for=\"metodo_pago\"><b>FORMA DE PAGO</b></label>
@@ -62,7 +62,7 @@ class __TwigTemplate_4949d90b9f0ea60ddb43cc6d0989749d62d07c6bf253eaf623c4ad046a4
         $context["detailsUrlParameter"] = $this->getAttribute((isset($context["builderList"]) ? $context["builderList"] : null), "detailsUrlParameter", array());
         // line 30
         echo "\t\t
-\t\t<div class=\"input-field col s6\">
+\t\t<div class=\"input-field col s12 m6 l6\">
 \t\t\t<select name=\"subscriptions_id\" id=\"subscriptions_id-select\" required>
 \t\t\t\t";
         // line 33
@@ -71,7 +71,9 @@ class __TwigTemplate_4949d90b9f0ea60ddb43cc6d0989749d62d07c6bf253eaf623c4ad046a4
         $context['_iterated'] = false;
         foreach ($context['_seq'] as $context["_key"] => $context["record"]) {
             // line 34
-            echo "\t\t\t\t<option value=\"";
+            echo "\t\t\t\t<option data-precio=\"";
+            echo twig_escape_filter($this->env, $this->getAttribute($context["record"], "precio", array()), "html", null, true);
+            echo "\" value=\"";
             echo twig_escape_filter($this->env, $this->getAttribute($context["record"], "id", array()), "html", null, true);
             echo "\">";
             echo twig_escape_filter($this->env, $this->getAttribute($context["record"], "nombre", array()), "html", null, true);
@@ -112,7 +114,7 @@ class __TwigTemplate_4949d90b9f0ea60ddb43cc6d0989749d62d07c6bf253eaf623c4ad046a4
 
     public function getDebugInfo()
     {
-        return array (  91 => 38,  84 => 36,  74 => 34,  69 => 33,  64 => 30,  61 => 29,  58 => 28,  55 => 27,  52 => 26,  49 => 25,  47 => 24,  35 => 15,  19 => 1,);
+        return array (  93 => 38,  86 => 36,  74 => 34,  69 => 33,  64 => 30,  61 => 29,  58 => 28,  55 => 27,  52 => 26,  49 => 25,  47 => 24,  35 => 15,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -127,23 +129,23 @@ class __TwigTemplate_4949d90b9f0ea60ddb43cc6d0989749d62d07c6bf253eaf623c4ad046a4
     {
         return new Twig_Source("<div class=\"row\">
 \t<form data-request=\"onSave\" class=\"form-control col s12\">
-\t\t<div class=\"input-field col s4\">
-\t\t\t<input placeholder=\"Monto depositado\" id=\"monto-input\" type=\"number\" name=\"monto\" class=\"validate\" required>
+\t\t<div class=\"input-field col s12 m4 l4\">
+\t\t\t<input placeholder=\"Monto depositado\" id=\"monto-input\" type=\"number\" name=\"monto\" readonly class=\"right-align\" required>
 \t\t\t<label for=\"monto-input\"><b>MONTO</b></label>
 \t\t</div>
-\t\t<div class=\"input-field col s4\">
+\t\t<div class=\"input-field col s12 m4 l4 \">
 \t\t\t<input placeholder=\"Código de Referencia\" id=\"nro_referencia-input\" name=\"nro_referencia\" type=\"text\" class=\"validate\" >
 \t\t\t<label for=\"nro_referencia-input\"><b>REFERENCIA</b></label>
 \t\t</div>
-\t\t<div class=\"input-field col s4\">
+\t\t<div class=\"input-field col s12 m4 l4\">
 \t\t\t<input placeholder=\"Fecha del depósito\" id=\"fecha_pago-input\" name=\"fecha_pago\" type=\"date\" class=\"datepicker\" required>
 \t\t\t<label for=\"fecha_pago-input\"><b>FECHA</b></label>
 \t\t</div>
 \t\t<input id=\"plan_id-input\" type=\"hidden\" value=\"{{ this.param.subscriptions_id }}\">
-\t\t<div class=\"input-field col s6\">
+\t\t<div class=\"input-field col s12 m6 l6\">
 \t\t\t<select name=\"metodo_pago\" required>
 \t\t\t\t<option value=\"\" disabled selected> Seleccione Forma de Pago</option>
-\t\t\t\t<option value=\"trasnferencia\">Transferencia Bancaria</option>
+\t\t\t\t<option value=\"transferencia\">Transferencia Bancaria</option>
 \t\t\t\t<option value=\"deposito\">Depósito Bancario</option>
 \t\t\t\t</select>
 \t\t\t<label for=\"metodo_pago\"><b>FORMA DE PAGO</b></label>
@@ -155,10 +157,10 @@ class __TwigTemplate_4949d90b9f0ea60ddb43cc6d0989749d62d07c6bf253eaf623c4ad046a4
 \t\t{% set detailsKeyColumn = builderList.detailsKeyColumn %}
 \t\t{% set detailsUrlParameter = builderList.detailsUrlParameter %}
 \t\t
-\t\t<div class=\"input-field col s6\">
+\t\t<div class=\"input-field col s12 m6 l6\">
 \t\t\t<select name=\"subscriptions_id\" id=\"subscriptions_id-select\" required>
 \t\t\t\t{% for record in records %}
-\t\t\t\t<option value=\"{{ record.id }}\">{{ record.nombre }}</option>
+\t\t\t\t<option data-precio=\"{{ record.precio }}\" value=\"{{ record.id }}\">{{ record.nombre }}</option>
 \t\t\t\t{% else %}
 \t\t\t\t<option disabled selected value=\"\">Ningún plan seleccionado</option>
 \t\t\t\t{% endfor %}

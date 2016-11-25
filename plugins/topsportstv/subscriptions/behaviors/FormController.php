@@ -233,7 +233,7 @@ class FormController extends ControllerBehavior
 
         $userGroup = UserGroup::whereCode('usuarios-premium')->first();
 
-        $user->groups()->save($userGroup);
+	$user->groups()->save($userGroup);
 
         Flash::success($this->getLang('create[flashSave]', 'backend::lang.form.create_success'));
 
