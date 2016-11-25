@@ -27,3 +27,8 @@ columns:
         label: Monto
         type: number
         sortable: true
+    estado:
+        label: Estado
+        type: text
+        searchable: true
+        sortable: true

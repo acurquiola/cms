@@ -5,7 +5,7 @@ use BackendMenu;
 
 class Pagos extends Controller
 {
-    public $implement = ['Backend\Behaviors\ListController','Backend\Behaviors\FormController','Backend\Behaviors\ReorderController'];
+    public $implement = ['Backend\Behaviors\ListController','TopSportsTv\Subscriptions\Behaviors\FormController','Backend\Behaviors\ReorderController'];
     
     public $listConfig = 'config_list.yaml';
     public $formConfig = 'config_form.yaml';
@@ -16,4 +16,6 @@ class Pagos extends Controller
         parent::__construct();
         BackendMenu::setContext('TopSportsTv.Subscriptions', 'gestionPagos');
     }
+
+
 }

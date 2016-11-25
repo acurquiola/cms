@@ -39,19 +39,37 @@ fields:
         span: auto
         required: 1
         type: radio
+    estado:
+        label: Estado
+        oc.commentPosition: ''
+        options:
+            pendiente: Pendiente
+            confirmado: Confirmado
+        span: auto
+        type: dropdown
 tabs:
     fields:
         fecha_inicio:
-            label: 'Fecha Inicio'
-            oc.commentPosition: ''
-            mode: date
+            label: 'Fecha de Inicio'
             span: auto
-            type: datepicker
-            tab: 'Datos de Activación'
+            dependsOn:
+                - estado
+            trigger:
+                action: show
+                field: estado
+                condition: 'value[confirmado]'
+            type: text
+            comment: 'Formato: YYYY-MM-DD'
+            tab: 'Datos de Activción'
         fecha_fin:
-            label: 'Fecha Culminación'
-            oc.commentPosition: ''
-            mode: date
-            span: auto
-            type: datepicker
-            tab: 'Datos de Activación'
+            label: 'Fecha de Culminación'
+            span: right
+            dependsOn:
+                - estado
+            trigger:
+                action: show
+                field: estado
+                condition: 'value[confirmado]'
+            type: text
+            comment: 'Formato: YYYY-MM-DD'
+            tab: 'Datos de Activción'

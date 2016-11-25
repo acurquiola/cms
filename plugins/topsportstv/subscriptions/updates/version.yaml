@@ -36,3 +36,9 @@
 1.0.13:
     - 'Updated table topsportstv_subscriptions_pagos'
     - builder_table_update_topsportstv_subscriptions_pagos_8.php
+1.0.14:
+    - 'Updated table topsportstv_subscriptions_pagos'
+    - builder_table_update_topsportstv_subscriptions_pagos_9.php
+1.0.15:
+    - 'Updated table topsportstv_subscriptions_'
+    - builder_table_update_topsportstv_subscriptions_.php

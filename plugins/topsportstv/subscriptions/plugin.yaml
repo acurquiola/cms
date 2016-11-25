@@ -7,7 +7,7 @@ plugin:
 navigation:
     gestionPlanes:
         label: Planes
-        url: topsportstv/subscriptions/plnes
+        url: topsportstv/subscriptions/subscriptions
         icon: icon-ticket
         permissions:
             - gestion_planes

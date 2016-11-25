@@ -1,7 +1,8 @@
 <?php namespace TopSportsTv\Subscriptions\Models;
 
 use Model;
-
+use Carbon\Carbon;
+use TopSportsTv\Subscriptions\Models\Subscription;
 /**
  * Model
  */
@@ -41,4 +42,17 @@ class Pago extends Model
         ]
     ];
 
+    public function filterFields($fields, $context = null)
+    {
+        if($this->estado == 'confirmado') {
+            $today = Carbon::now();
+            $fields->fecha_inicio->value = $today->toDateString();
+            
+            $plan                        = $fields->subscriptions->value;
+            $meses                       = Subscription::find($plan)->duracion_meses;
+            $fields->fecha_fin->value    = $today->addMonth($meses)->toDateString();
+        }
+    }
+
+    
 }

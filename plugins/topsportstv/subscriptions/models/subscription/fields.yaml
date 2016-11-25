@@ -12,6 +12,11 @@ fields:
         span: auto
         placeholder: 'Precio del Plan'
         type: number
+    duracion_meses:
+        label: 'Cantidad de Meses'
+        span: auto
+        oc.commentPosition: ''
+        type: number
     descripcion:
         label: Descripción
         span: full
