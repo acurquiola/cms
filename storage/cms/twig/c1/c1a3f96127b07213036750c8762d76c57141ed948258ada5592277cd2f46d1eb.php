@@ -31,27 +31,30 @@ class __TwigTemplate_e91d871defd0a018aeabf0553c0f1967d21138172dff526da866001276f
         if ((isset($context["user"]) ? $context["user"] : null)) {
             // line 7
             echo "        ";
-            if (call_user_func_array($this->env->getFunction('inGroup')->getCallable(), array("usuarios-premium"))) {
+            if (call_user_func_array($this->env->getFunction('can')->getCallable(), array("seccion_noticias"))) {
                 // line 8
                 echo "        ";
-            } else {
+            } elseif (call_user_func_array($this->env->getFunction('can')->getCallable(), array("seccion_streaming"))) {
                 // line 9
+                echo "        ";
+            } else {
+                // line 10
                 echo "            <div class=\"row\">
             \t<div class=\"col l12 m12 s12\">
                     ";
-                // line 11
+                // line 12
                 $context['__cms_partial_params'] = [];
                 echo $this->env->getExtension('CMS')->partialFunction("home/alertaVerPlanes"                , $context['__cms_partial_params']                );
                 unset($context['__cms_partial_params']);
-                // line 12
+                // line 13
                 echo "            \t</div>
             </div>
         ";
             }
-            // line 15
+            // line 16
             echo "    ";
         }
-        // line 16
+        // line 17
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('CMS')->partialFunction("home/secciones"        , $context['__cms_partial_params']        );
         unset($context['__cms_partial_params']);
@@ -69,7 +72,7 @@ class __TwigTemplate_e91d871defd0a018aeabf0553c0f1967d21138172dff526da866001276f
 
     public function getDebugInfo()
     {
-        return array (  55 => 16,  52 => 15,  47 => 12,  43 => 11,  39 => 9,  36 => 8,  33 => 7,  31 => 6,  23 => 3,  19 => 1,);
+        return array (  58 => 17,  55 => 16,  50 => 13,  46 => 12,  42 => 10,  39 => 9,  36 => 8,  33 => 7,  31 => 6,  23 => 3,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -88,7 +91,8 @@ class __TwigTemplate_e91d871defd0a018aeabf0553c0f1967d21138172dff526da866001276f
 \t</div>
 </div>
     {% if user %}
-        {% if inGroup('usuarios-premium') %}
+        {% if can('seccion_noticias') %}
+        {% elseif can('seccion_streaming')%}
         {% else %}
             <div class=\"row\">
             \t<div class=\"col l12 m12 s12\">

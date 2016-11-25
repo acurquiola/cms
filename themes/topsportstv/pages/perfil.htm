@@ -3,12 +3,13 @@ url = "/perfil"
 layout = "default"
 is_hidden = 0
 
-[account]
-paramCode = "code"
-
 [session]
 security = "user"
 redirect = "home"
+
+[RainLab\User\Components\Account account]
+redirect = "home"
+paramCode = "code"
 ==
 <div class="container">
     <div class="section">
@@ -16,8 +17,9 @@ redirect = "home"
             <div class="wrap-content ">
                 {% if user %}
                 
-                    <h3>Tu cuenta</h3>
-        
+                    <h4>Tu cuenta</h4>
+                    
+                
                     <div class="right-align">
                         {% partial account ~ '::activation_check' %}
                     </div>
@@ -27,8 +29,6 @@ redirect = "home"
                     <div class="right-align">
                         {% partial account ~ '::deactivate_link' %}
                     </div>
-                
-                
                 {% endif %}
             </div>
         </div>

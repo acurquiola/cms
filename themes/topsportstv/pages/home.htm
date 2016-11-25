@@ -12,7 +12,8 @@ security = "all"
 	</div>
 </div>
     {% if user %}
-        {% if inGroup('usuarios-premium') %}
+        {% if can('seccion_noticias') %}
+        {% elseif can('seccion_streaming')%}
         {% else %}
             <div class="row">
             	<div class="col l12 m12 s12">

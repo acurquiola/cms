@@ -1,0 +1,87 @@
+1480059071a:1:{s:11:"default.htm";a:7:{s:8:"fileName";s:11:"default.htm";s:7:"content";s:1743:"description = "Default layout"
+
+[sweetAlertMessage]
+==
+<!DOCTYPE html>
+{% component 'sweetAlertMessage' %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>October CMS - {{ this.page.title }}</title>
+        <meta name="description" content="{{ this.page.meta_description }}">
+        <meta name="title" content="{{ this.page.meta_title }}">
+        <meta name="author" content="OctoberCMS">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="generator" content="OctoberCMS">
+        <link href="{{ ['assets/css/materialize/css/materialize.min.css',
+                        'assets/css/style.css',
+                        'assets/font-awesome/css/font-awesome.min.css'
+                            ]|theme }}" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+          <link rel="stylesheet" href="/plugins/planetadeleste/swal/assets/vendor/sweetalert/sweetalert.css">
+    {% styles %}
+    </head>
+    <body>
+
+
+        {% partial 'nav' %}
+
+        <!-- Content -->
+        <main >
+            {% page %}
+        </main>
+        
+            {%partial 'footer' %}
+
+        <!-- Scripts -->
+        <script src="{{ 'assets/js/jquery.js'|theme }}"></script>
+        <script src="{{ 'assets/js/materialize/js/materialize.min.js'|theme }}"></script>
+        <script src="{{ 'assets/js/app.js'|theme }}"></script>
+        <script src="/plugins/planetadeleste/swal/assets/vendor/sweetalert/sweetalert.min.js"></script>
+        <script src="/plugins/planetadeleste/swal/assets/js/flash-swal.js"></script>
+        {% framework extras %}
+        {% scripts %}
+
+    </body>
+</html>";s:5:"mtime";i:1480055450;s:6:"markup";s:1684:"<!DOCTYPE html>
+{% component 'sweetAlertMessage' %}
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>October CMS - {{ this.page.title }}</title>
+        <meta name="description" content="{{ this.page.meta_description }}">
+        <meta name="title" content="{{ this.page.meta_title }}">
+        <meta name="author" content="OctoberCMS">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="generator" content="OctoberCMS">
+        <link href="{{ ['assets/css/materialize/css/materialize.min.css',
+                        'assets/css/style.css',
+                        'assets/font-awesome/css/font-awesome.min.css'
+                            ]|theme }}" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+          <link rel="stylesheet" href="/plugins/planetadeleste/swal/assets/vendor/sweetalert/sweetalert.css">
+    {% styles %}
+    </head>
+    <body>
+
+
+        {% partial 'nav' %}
+
+        <!-- Content -->
+        <main >
+            {% page %}
+        </main>
+        
+            {%partial 'footer' %}
+
+        <!-- Scripts -->
+        <script src="{{ 'assets/js/jquery.js'|theme }}"></script>
+        <script src="{{ 'assets/js/materialize/js/materialize.min.js'|theme }}"></script>
+        <script src="{{ 'assets/js/app.js'|theme }}"></script>
+        <script src="/plugins/planetadeleste/swal/assets/vendor/sweetalert/sweetalert.min.js"></script>
+        <script src="/plugins/planetadeleste/swal/assets/js/flash-swal.js"></script>
+        {% framework extras %}
+        {% scripts %}
+
+    </body>
+</html>";s:4:"code";N;s:11:"description";s:14:"Default layout";s:17:"sweetAlertMessage";a:0:{}}}

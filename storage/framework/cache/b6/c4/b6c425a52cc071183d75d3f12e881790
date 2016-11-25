@@ -1,4 +1,4 @@
-1479864447a:1:{s:17:"planes/planes.htm";a:6:{s:8:"fileName";s:17:"planes/planes.htm";s:7:"content";s:2550:"description = "Listado de los planes de suscripción"
+1480055820a:1:{s:17:"planes/planes.htm";a:6:{s:8:"fileName";s:17:"planes/planes.htm";s:7:"content";s:2551:"description = "Listado de los planes de suscripción"
 ==
 {% set records = builderList.records %}
         {% set displayColumn = builderList.displayColumn %}
@@ -21,7 +21,7 @@
                                     $ {{ record.precio }}
                                 </div>
                                 <div class="container-button">
-                                    <a class="w-button" href="{{ 'pagos/registrar'|page({ subscriptions_id: record.id })}}" > CONTRATAR </a>
+                                    <a class="w-button" href="{{ 'planes/contratar'|page({ subscriptions_id: record.id })}}" > CONTRATAR </a>
                                 </div>
                             </div>
                             <div class="card-content">
@@ -51,7 +51,7 @@
                     <li><a href="{{ this.page.baseFileName|page({ (pageParam): (records.currentPage+1) }) }}">Next &rarr;</a></li>
                 {% endif %}
             </ul>
-        {% endif %}";s:5:"mtime";i:1479860181;s:6:"markup";s:2491:"{% set records = builderList.records %}
+        {% endif %}";s:5:"mtime";i:1479876322;s:6:"markup";s:2492:"{% set records = builderList.records %}
         {% set displayColumn = builderList.displayColumn %}
         {% set noRecordsMessage = builderList.noRecordsMessage %}
         {% set detailsPage = builderList.detailsPage %}
@@ -72,7 +72,7 @@
                                     $ {{ record.precio }}
                                 </div>
                                 <div class="container-button">
-                                    <a class="w-button" href="{{ 'pagos/registrar'|page({ subscriptions_id: record.id })}}" > CONTRATAR </a>
+                                    <a class="w-button" href="{{ 'planes/contratar'|page({ subscriptions_id: record.id })}}" > CONTRATAR </a>
                                 </div>
                             </div>
                             <div class="card-content">

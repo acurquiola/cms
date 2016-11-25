@@ -1,4 +1,4 @@
-1479866655a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:532:"title = "home"
+1480059071a:1:{s:8:"home.htm";a:10:{s:8:"fileName";s:8:"home.htm";s:7:"content";s:572:"title = "home"
 url = "/"
 layout = "default"
 is_hidden = 0
@@ -12,7 +12,8 @@ security = "all"
 	</div>
 </div>
     {% if user %}
-        {% if inGroup('usuarios-premium') %}
+        {% if can('seccion_noticias') %}
+        {% elseif can('seccion_streaming')%}
         {% else %}
             <div class="row">
             	<div class="col l12 m12 s12">
@@ -21,14 +22,14 @@ security = "all"
             </div>
         {% endif %}
     {% endif %}
-{% partial 'home/secciones' %}
-";s:5:"mtime";i:1479453667;s:6:"markup";s:433:"<div class="row">
+{% partial 'home/secciones' %}";s:5:"mtime";i:1480035535;s:6:"markup";s:475:"<div class="row">
 	<div class="col l12 m12 s12">
 		{% partial 'home/carousel' %}     
 	</div>
 </div>
     {% if user %}
-        {% if inGroup('usuarios-premium') %}
+        {% if can('seccion_noticias') %}
+        {% elseif can('seccion_streaming')%}
         {% else %}
             <div class="row">
             	<div class="col l12 m12 s12">

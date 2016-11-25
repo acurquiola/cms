@@ -1,0 +1,147 @@
+1480059071a:1:{s:19:"blog/categorias.htm";a:13:{s:8:"fileName";s:19:"blog/categorias.htm";s:7:"content";s:3578:"title = "Blog Categorias"
+url = "/blog/categorias/:slug/:page?"
+layout = "default"
+description = "Viewing blog posts in a specific category."
+hidden = "0"
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = "{{ :slug }}"
+postsPerPage = "10"
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "blog/categorias"
+postPage = "blog/post"
+
+[blogCategories]
+slug = "{{ :slug }}"
+displayEmpty = "0"
+categoryPage = "blog/categorias"
+
+[session]
+security = "user"
+redirect = "home"
+==
+<div class="row">
+    <div class="col s12 m8 l8">
+        {% set posts = blogPosts.posts %}
+            {% for post in posts %}
+                <div class="col s12 m12 l12">
+                    <div class="card horizontal news-post">
+                        <div class="card-stacked">
+                            <h3 class="news-post-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                            <div class="card-content news-post-content">
+                                <div class="card-content-info right-align">
+                                    Publicado el {{ post.published_at|date('M d, Y') }}
+                                </div>
+                                <p class="info truncate">
+                                    {% if post.categories.count %} in {% endif %}
+                                    {% for category in post.categories %}
+                                        <a href="{{ category.url }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
+                                    {% endfor %}
+                                </p>        
+
+                                <p class="excerpt">{{ post.summary }}</p>
+                            </div>
+                            <div class="right-align news-post-footer">
+                                <a  href="{{ post.url }}"  class="waves-effect waves-light btn">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            {% else %}
+                <p>{{ noPostsMessage }}</p>
+            {% endfor %}
+        
+            {% if posts.lastPage > 1 %}
+                <ul class="pagination">
+                    {% if posts.currentPage > 1 %}
+                        <li><a href="{{ this.page.baseFileName|page({ (pageParam): (posts.currentPage-1) }) }}">&larr; Prev</a></li>
+                    {% endif %}
+            
+                    {% for page in 1..posts.lastPage %}
+                        <li class="{{ posts.currentPage == page ? 'active' : null }}">
+                            <a href="{{ this.page.baseFileName|page({ (pageParam): page }) }}">{{ page }}</a>
+                        </li>
+                    {% endfor %}
+            
+                    {% if posts.lastPage > posts.currentPage %}
+                        <li><a href="{{ this.page.baseFileName|page({ (pageParam): (posts.currentPage+1) }) }}">Next &rarr;</a></li>
+                    {% endif %}
+                </ul>
+            {% endif %}
+    </div>
+    <div class="card col s12 m2 l2 categorias-post">
+        <h6 class="center"> CATEGORÍAS </h6>
+        {% if blogCategories.categories %}
+            <ul class="category-list">
+                {% partial blogCategories ~ "::items"
+                    categories = blogCategories.categories
+                    currentCategorySlug = blogCategories.currentCategorySlug
+                %}
+            </ul>
+        {% endif %}
+
+    </div>
+  </div>";s:5:"mtime";i:1479090530;s:6:"markup";s:3045:"<div class="row">
+    <div class="col s12 m8 l8">
+        {% set posts = blogPosts.posts %}
+            {% for post in posts %}
+                <div class="col s12 m12 l12">
+                    <div class="card horizontal news-post">
+                        <div class="card-stacked">
+                            <h3 class="news-post-title"><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                            <div class="card-content news-post-content">
+                                <div class="card-content-info right-align">
+                                    Publicado el {{ post.published_at|date('M d, Y') }}
+                                </div>
+                                <p class="info truncate">
+                                    {% if post.categories.count %} in {% endif %}
+                                    {% for category in post.categories %}
+                                        <a href="{{ category.url }}">{{ category.name }}</a>{% if not loop.last %}, {% endif %}
+                                    {% endfor %}
+                                </p>        
+
+                                <p class="excerpt">{{ post.summary }}</p>
+                            </div>
+                            <div class="right-align news-post-footer">
+                                <a  href="{{ post.url }}"  class="waves-effect waves-light btn">Ver más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            {% else %}
+                <p>{{ noPostsMessage }}</p>
+            {% endfor %}
+        
+            {% if posts.lastPage > 1 %}
+                <ul class="pagination">
+                    {% if posts.currentPage > 1 %}
+                        <li><a href="{{ this.page.baseFileName|page({ (pageParam): (posts.currentPage-1) }) }}">&larr; Prev</a></li>
+                    {% endif %}
+            
+                    {% for page in 1..posts.lastPage %}
+                        <li class="{{ posts.currentPage == page ? 'active' : null }}">
+                            <a href="{{ this.page.baseFileName|page({ (pageParam): page }) }}">{{ page }}</a>
+                        </li>
+                    {% endfor %}
+            
+                    {% if posts.lastPage > posts.currentPage %}
+                        <li><a href="{{ this.page.baseFileName|page({ (pageParam): (posts.currentPage+1) }) }}">Next &rarr;</a></li>
+                    {% endif %}
+                </ul>
+            {% endif %}
+    </div>
+    <div class="card col s12 m2 l2 categorias-post">
+        <h6 class="center"> CATEGORÍAS </h6>
+        {% if blogCategories.categories %}
+            <ul class="category-list">
+                {% partial blogCategories ~ "::items"
+                    categories = blogCategories.categories
+                    currentCategorySlug = blogCategories.currentCategorySlug
+                %}
+            </ul>
+        {% endif %}
+
+    </div>
+  </div>";s:4:"code";N;s:5:"title";s:15:"Blog Categorias";s:3:"url";s:29:"/blog/categorias/:slug/:page?";s:6:"layout";s:7:"default";s:11:"description";s:42:"Viewing blog posts in a specific category.";s:6:"hidden";s:1:"0";s:9:"blogPosts";a:7:{s:10:"pageNumber";s:11:"{{ :page }}";s:14:"categoryFilter";s:11:"{{ :slug }}";s:12:"postsPerPage";s:2:"10";s:14:"noPostsMessage";s:14:"No posts found";s:9:"sortOrder";s:17:"published_at desc";s:12:"categoryPage";s:15:"blog/categorias";s:8:"postPage";s:9:"blog/post";}s:14:"blogCategories";a:3:{s:4:"slug";s:11:"{{ :slug }}";s:12:"displayEmpty";s:1:"0";s:12:"categoryPage";s:15:"blog/categorias";}s:7:"session";a:2:{s:8:"security";s:4:"user";s:8:"redirect";s:4:"home";}}}

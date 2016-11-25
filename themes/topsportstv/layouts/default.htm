@@ -1,6 +1,9 @@
 description = "Default layout"
+
+[sweetAlertMessage]
 ==
 <!DOCTYPE html>
+{% component 'sweetAlertMessage' %}
 <html>
     <head>
         <meta charset="utf-8">
@@ -15,6 +18,7 @@ description = "Default layout"
                         'assets/font-awesome/css/font-awesome.min.css'
                             ]|theme }}" rel="stylesheet">
           <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+          <link rel="stylesheet" href="/plugins/planetadeleste/swal/assets/vendor/sweetalert/sweetalert.css">
     {% styles %}
     </head>
     <body>
@@ -33,6 +37,8 @@ description = "Default layout"
         <script src="{{ 'assets/js/jquery.js'|theme }}"></script>
         <script src="{{ 'assets/js/materialize/js/materialize.min.js'|theme }}"></script>
         <script src="{{ 'assets/js/app.js'|theme }}"></script>
+        <script src="/plugins/planetadeleste/swal/assets/vendor/sweetalert/sweetalert.min.js"></script>
+        <script src="/plugins/planetadeleste/swal/assets/js/flash-swal.js"></script>
         {% framework extras %}
         {% scripts %}
 

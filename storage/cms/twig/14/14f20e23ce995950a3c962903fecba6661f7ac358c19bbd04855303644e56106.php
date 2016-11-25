@@ -63,7 +63,7 @@ class __TwigTemplate_985a7cd2ef82872ab340a59b8e0220cc881c41150dcace0e9ea1d5f1bfd
                                 <div class=\"container-button\">
                                     <a class=\"w-button\" href=\"";
             // line 22
-            echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("pagos/registrar", array("subscriptions_id" => $this->getAttribute($context["record"], "id", array())));
+            echo $this->env->getExtension('Cms\Twig\Extension')->pageFilter("planes/contratar", array("subscriptions_id" => $this->getAttribute($context["record"], "id", array())));
             echo "\" > CONTRATAR </a>
                                 </div>
                             </div>
@@ -192,7 +192,7 @@ class __TwigTemplate_985a7cd2ef82872ab340a59b8e0220cc881c41150dcace0e9ea1d5f1bfd
                                     \$ {{ record.precio }}
                                 </div>
                                 <div class=\"container-button\">
-                                    <a class=\"w-button\" href=\"{{ 'pagos/registrar'|page({ subscriptions_id: record.id })}}\" > CONTRATAR </a>
+                                    <a class=\"w-button\" href=\"{{ 'planes/contratar'|page({ subscriptions_id: record.id })}}\" > CONTRATAR </a>
                                 </div>
                             </div>
                             <div class=\"card-content\">

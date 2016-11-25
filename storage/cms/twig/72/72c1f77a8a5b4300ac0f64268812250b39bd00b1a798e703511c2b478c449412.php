@@ -17,87 +17,96 @@ class __TwigTemplate_ac6e817e57043051a3920f7c44fa747178d0a3a6a114944d4069850a8df
     {
         // line 1
         echo "<!DOCTYPE html>
-<html>
+";
+        // line 2
+        $context['__cms_component_params'] = [];
+        echo $this->env->getExtension('CMS')->componentFunction("sweetAlertMessage"        , $context['__cms_component_params']        );
+        unset($context['__cms_component_params']);
+        // line 3
+        echo "<html>
     <head>
         <meta charset=\"utf-8\">
         <title>October CMS - ";
-        // line 5
+        // line 6
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["this"]) ? $context["this"] : null), "page", array()), "title", array()), "html", null, true);
         echo "</title>
         <meta name=\"description\" content=\"";
-        // line 6
+        // line 7
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["this"]) ? $context["this"] : null), "page", array()), "meta_description", array()), "html", null, true);
         echo "\">
         <meta name=\"title\" content=\"";
-        // line 7
+        // line 8
         echo twig_escape_filter($this->env, $this->getAttribute($this->getAttribute((isset($context["this"]) ? $context["this"] : null), "page", array()), "meta_title", array()), "html", null, true);
         echo "\">
         <meta name=\"author\" content=\"OctoberCMS\">
         <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">
         <meta name=\"generator\" content=\"OctoberCMS\">
         <link href=\"";
-        // line 11
+        // line 12
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter(array(0 => "assets/css/materialize/css/materialize.min.css", 1 => "assets/css/style.css", 2 => "assets/font-awesome/css/font-awesome.min.css"));
-        // line 14
+        // line 15
         echo "\" rel=\"stylesheet\">
           <link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\" rel=\"stylesheet\">
+          <link rel=\"stylesheet\" href=\"/plugins/planetadeleste/swal/assets/vendor/sweetalert/sweetalert.css\">
     ";
-        // line 16
+        // line 18
         echo $this->env->getExtension('CMS')->assetsFunction('css');
         echo $this->env->getExtension('CMS')->displayBlock('styles');
-        // line 17
+        // line 19
         echo "    </head>
     <body>
 
 
         ";
-        // line 21
+        // line 23
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('CMS')->partialFunction("nav"        , $context['__cms_partial_params']        );
         unset($context['__cms_partial_params']);
-        // line 22
+        // line 24
         echo "
         <!-- Content -->
         <main >
             ";
-        // line 25
+        // line 27
         echo $this->env->getExtension('CMS')->pageFunction();
-        // line 26
+        // line 28
         echo "        </main>
         
             ";
-        // line 28
+        // line 30
         $context['__cms_partial_params'] = [];
         echo $this->env->getExtension('CMS')->partialFunction("footer"        , $context['__cms_partial_params']        );
         unset($context['__cms_partial_params']);
-        // line 29
+        // line 31
         echo "
         <!-- Scripts -->
         <script src=\"";
-        // line 31
+        // line 33
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/js/jquery.js");
         echo "\"></script>
         <script src=\"";
-        // line 32
+        // line 34
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/js/materialize/js/materialize.min.js");
         echo "\"></script>
         <script src=\"";
-        // line 33
+        // line 35
         echo $this->env->getExtension('Cms\Twig\Extension')->themeFilter("assets/js/app.js");
         echo "\"></script>
+        <script src=\"/plugins/planetadeleste/swal/assets/vendor/sweetalert/sweetalert.min.js\"></script>
+        <script src=\"/plugins/planetadeleste/swal/assets/js/flash-swal.js\"></script>
         ";
-        // line 34
+        // line 38
         echo '<script src="'. Request::getBasePath()
                 .'/modules/system/assets/js/framework.js"></script>'.PHP_EOL;
         echo '<script src="'. Request::getBasePath()
                     .'/modules/system/assets/js/framework.extras.js"></script>'.PHP_EOL;
         echo '<link rel="stylesheet" property="stylesheet" href="'. Request::getBasePath()
                     .'/modules/system/assets/css/framework.extras.css">'.PHP_EOL;
-        // line 35
+        // line 39
         echo "        ";
         echo $this->env->getExtension('CMS')->assetsFunction('js');
         echo $this->env->getExtension('CMS')->displayBlock('scripts');
-        // line 36
+        // line 40
         echo "
     </body>
 </html>";
@@ -115,7 +124,7 @@ class __TwigTemplate_ac6e817e57043051a3920f7c44fa747178d0a3a6a114944d4069850a8df
 
     public function getDebugInfo()
     {
-        return array (  101 => 36,  97 => 35,  90 => 34,  86 => 33,  82 => 32,  78 => 31,  74 => 29,  70 => 28,  66 => 26,  64 => 25,  59 => 22,  55 => 21,  49 => 17,  46 => 16,  42 => 14,  40 => 11,  33 => 7,  29 => 6,  25 => 5,  19 => 1,);
+        return array (  110 => 40,  106 => 39,  99 => 38,  93 => 35,  89 => 34,  85 => 33,  81 => 31,  77 => 30,  73 => 28,  71 => 27,  66 => 24,  62 => 23,  56 => 19,  53 => 18,  48 => 15,  46 => 12,  39 => 8,  35 => 7,  31 => 6,  26 => 3,  22 => 2,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
@@ -129,6 +138,7 @@ class __TwigTemplate_ac6e817e57043051a3920f7c44fa747178d0a3a6a114944d4069850a8df
     public function getSourceContext()
     {
         return new Twig_Source("<!DOCTYPE html>
+{% component 'sweetAlertMessage' %}
 <html>
     <head>
         <meta charset=\"utf-8\">
@@ -143,6 +153,7 @@ class __TwigTemplate_ac6e817e57043051a3920f7c44fa747178d0a3a6a114944d4069850a8df
                         'assets/font-awesome/css/font-awesome.min.css'
                             ]|theme }}\" rel=\"stylesheet\">
           <link href=\"https://fonts.googleapis.com/icon?family=Material+Icons\" rel=\"stylesheet\">
+          <link rel=\"stylesheet\" href=\"/plugins/planetadeleste/swal/assets/vendor/sweetalert/sweetalert.css\">
     {% styles %}
     </head>
     <body>
@@ -161,6 +172,8 @@ class __TwigTemplate_ac6e817e57043051a3920f7c44fa747178d0a3a6a114944d4069850a8df
         <script src=\"{{ 'assets/js/jquery.js'|theme }}\"></script>
         <script src=\"{{ 'assets/js/materialize/js/materialize.min.js'|theme }}\"></script>
         <script src=\"{{ 'assets/js/app.js'|theme }}\"></script>
+        <script src=\"/plugins/planetadeleste/swal/assets/vendor/sweetalert/sweetalert.min.js\"></script>
+        <script src=\"/plugins/planetadeleste/swal/assets/js/flash-swal.js\"></script>
         {% framework extras %}
         {% scripts %}
 
