@@ -1,0 +1,31 @@
+1480057058a:1:{s:14:"formasPago.htm";a:6:{s:8:"fileName";s:14:"formasPago.htm";s:7:"content";s:427:"<div class="col l12 m12 s12"> 
+    <ul>
+      <li class="center-align" id="formasPago">
+            <i class="fa fa-cc-paypal fa-4x fa-border default" ></i>
+            <i class="fa fa-cc-mastercard fa-4x fa-border"></i>
+            <i class="fa fa-cc-visa fa-4x fa-border"></i>
+            <i class="fa fa-cc-amex fa-4x fa-border"></i>
+            <i class="fa fa-cc-discover fa-4x fa-border"></i>
+      </li>
+    </ul>
+</div>";s:5:"mtime";i:1478940934;s:6:"markup";s:427:"<div class="col l12 m12 s12"> 
+    <ul>
+      <li class="center-align" id="formasPago">
+            <i class="fa fa-cc-paypal fa-4x fa-border default" ></i>
+            <i class="fa fa-cc-mastercard fa-4x fa-border"></i>
+            <i class="fa fa-cc-visa fa-4x fa-border"></i>
+            <i class="fa fa-cc-amex fa-4x fa-border"></i>
+            <i class="fa fa-cc-discover fa-4x fa-border"></i>
+      </li>
+    </ul>
+</div>";s:4:"code";N;s:12:"parsedMarkup";s:427:"<div class="col l12 m12 s12"> 
+    <ul>
+      <li class="center-align" id="formasPago">
+            <i class="fa fa-cc-paypal fa-4x fa-border default" ></i>
+            <i class="fa fa-cc-mastercard fa-4x fa-border"></i>
+            <i class="fa fa-cc-visa fa-4x fa-border"></i>
+            <i class="fa fa-cc-amex fa-4x fa-border"></i>
+            <i class="fa fa-cc-discover fa-4x fa-border"></i>
+      </li>
+    </ul>
+</div>";}}

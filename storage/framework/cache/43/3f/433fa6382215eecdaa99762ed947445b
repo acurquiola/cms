@@ -1,0 +1,42 @@
+1480057009a:1:{s:16:"confirmacion.htm";a:9:{s:8:"fileName";s:16:"confirmacion.htm";s:7:"content";s:1093:"title = "Confirmación"
+url = "/confirmacion"
+layout = "default"
+is_hidden = 0
+==
+<div class="container">
+    <div class="section">
+        <div class="row">
+            <div class="wrap z-depth-2">
+                <div class="wrap-content">
+                    <div class="col-md-6 center-align">
+                        <h4 >¡Bienvenido, tu cuenta ha sido verificada!</h4>
+                        </br>
+                        <p>Te invitamos a que contrates alguno de nuestros planes y disfrutes de todo el contenido que tenemos para ti</p>
+                        {% content 'formasPago.htm' %}
+                        <a class="waves-effect waves-light btn " href="{{ 'home'|page}}" style="margin-top: 20px"> Home</a>
+                        <a class="waves-effect waves-light btn " href="{{ 'planes'|page}}" style="margin-top: 20px" >Ver Planes</a>
+                        <a class="waves-effect waves-light btn " href="{{ 'perfil'|page}}" style="margin-top: 20px"> Ir a tu cuenta</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>";s:5:"mtime";i:1479450114;s:6:"markup";s:1011:"<div class="container">
+    <div class="section">
+        <div class="row">
+            <div class="wrap z-depth-2">
+                <div class="wrap-content">
+                    <div class="col-md-6 center-align">
+                        <h4 >¡Bienvenido, tu cuenta ha sido verificada!</h4>
+                        </br>
+                        <p>Te invitamos a que contrates alguno de nuestros planes y disfrutes de todo el contenido que tenemos para ti</p>
+                        {% content 'formasPago.htm' %}
+                        <a class="waves-effect waves-light btn " href="{{ 'home'|page}}" style="margin-top: 20px"> Home</a>
+                        <a class="waves-effect waves-light btn " href="{{ 'planes'|page}}" style="margin-top: 20px" >Ver Planes</a>
+                        <a class="waves-effect waves-light btn " href="{{ 'perfil'|page}}" style="margin-top: 20px"> Ir a tu cuenta</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>";s:4:"code";N;s:5:"title";s:13:"Confirmación";s:3:"url";s:13:"/confirmacion";s:6:"layout";s:7:"default";s:9:"is_hidden";s:1:"0";}}

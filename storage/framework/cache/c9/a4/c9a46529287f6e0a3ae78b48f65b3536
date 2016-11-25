@@ -83,7 +83,7 @@ redirect = "home"
         {% endif %}
 
     </div>
-  </div>";s:5:"mtime";i:1479362845;s:6:"markup";s:3219:"<div class="row">
+  </div>";s:5:"mtime";i:1479093360;s:6:"markup";s:3157:"<div class="row">
     <div class="col s12 m8 l8">
         {% set posts = blogPosts.posts %}
             {% for post in posts %}
