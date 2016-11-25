@@ -5,14 +5,14 @@ plugin:
     icon: oc-icon-ticket
     homepage: ''
 navigation:
-    main-menu-item:
+    gestionPlanes:
         label: Planes
-        url: topsportstv/subscriptions/subscriptions
+        url: topsportstv/subscriptions/plnes
         icon: icon-ticket
         permissions:
             - gestion_planes
     gestionPagos:
-        label: 'Gestión de Pagos'
+        label: Suscripciones
         url: topsportstv/subscriptions/pagos
         icon: icon-credit-card
         permissions:

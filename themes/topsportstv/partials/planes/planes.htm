@@ -21,7 +21,7 @@ description = "Listado de los planes de suscripción"
                                     $ {{ record.precio }}
                                 </div>
                                 <div class="container-button">
-                                    <a class="w-button" href="{{ 'pagos/registrar'|page({ subscriptions_id: record.id })}}" > CONTRATAR </a>
+                                    <a class="w-button" href="{{ 'planes/contratar'|page({ subscriptions_id: record.id })}}" > CONTRATAR </a>
                                 </div>
                             </div>
                             <div class="card-content">

@@ -13,7 +13,7 @@ columns:
         sortable: true
         select: nombre
         relation: subscriptions
-    fecha:
+    fecha_pago:
         label: 'Fecha de Pago'
         type: date
         searchable: true

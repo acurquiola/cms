@@ -26,10 +26,24 @@ $(document).ready(function(){
       var plan = $('#plan_id-input').val();
       $('#subscriptions_id-select').val(plan).change();
       
+      $('#subscriptions_id-select').on('change', function(){
+	    var monto=$(this).find(':selected').data('precio');
+        $('#monto-input').val(monto);
+      });
+      
+        $('#subscriptions_id-select').change(function(e){
+            var monto=$(this).find(':selected').data('precio');
+            $('#monto-input').val(monto);
+        }).trigger('change');
+      
+      
+      
+      
+      
+      
       $('select').material_select();
       
        
 
 
 });
-
