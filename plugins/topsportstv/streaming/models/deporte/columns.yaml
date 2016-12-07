@@ -1,0 +1,11 @@
+columns:
+    descripcion:
+        label: Descripción
+        type: text
+        searchable: true
+        sortable: true
+    minutos:
+        label: Duración
+        type: number
+        searchable: false
+        sortable: true

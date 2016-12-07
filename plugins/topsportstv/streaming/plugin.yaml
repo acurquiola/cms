@@ -1,0 +1,27 @@
+plugin:
+    name: 'topsportstv.streaming::lang.plugin.name'
+    description: 'topsportstv.streaming::lang.plugin.description'
+    author: TopSportsTv
+    icon: oc-icon-video-camera
+    homepage: ''
+permissions:
+    streaming-eventos:
+        tab: 'Streaming Eventos'
+        label: 'Streaming - Eventos'
+    streaming-deportes:
+        tab: 'Streaming Deportes'
+        label: 'Streaming - Deportes'
+navigation:
+    streaming:
+        label: 'topsportstv.streaming::lang.plugin.name'
+        url: topsportstv/streaming/eventos
+        icon: icon-video-camera
+        permissions:
+            - streaming-eventos
+        sideMenu:
+            streaming-deportes:
+                label: Deportes
+                url: topsportstv/streaming/deportes
+                icon: icon-futbol-o
+                permissions:
+                    - streaming-deportes

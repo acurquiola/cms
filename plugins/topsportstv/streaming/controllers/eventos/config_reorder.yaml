@@ -1,0 +1,4 @@
+title: Eventos
+modelClass: Topsportstv\Streaming\Models\Evento
+toolbar:
+    buttons: reorder_toolbar

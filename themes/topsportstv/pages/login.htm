@@ -11,13 +11,6 @@ redirect = "home"
 redirect = "home"
 paramCode = "code"
 ==
-<?php
-public function onCheckEmail()
-{
-    return ['isTaken' => Auth::findUserByLogin(post('email')) ? 1 : 0];
-}
-?>
-==
 <div class="container" >
     <div class="section " >
 

@@ -1,0 +1,10 @@
+name: Deportes
+form: $/topsportstv/streaming/models/deporte/fields.yaml
+modelClass: Topsportstv\Streaming\Models\Deporte
+defaultRedirect: topsportstv/streaming/deportes
+create:
+    redirect: 'topsportstv/streaming/deportes/update/:id'
+    redirectClose: topsportstv/streaming/deportes
+update:
+    redirect: topsportstv/streaming/deportes
+    redirectClose: topsportstv/streaming/deportes
