@@ -199,6 +199,7 @@ class FormController extends ControllerBehavior
         }
     }
 
+
     /**
      * Ajax handler for saving from the creation form.
      * @return mixed
@@ -232,8 +233,8 @@ class FormController extends ControllerBehavior
         $user = User::find($user_id);
 
         $userGroup = UserGroup::whereCode('usuarios-premium')->first();
+	    $user->groups()->save($userGroup);
 
-	$user->groups()->save($userGroup);
 
         Flash::success($this->getLang('create[flashSave]', 'backend::lang.form.create_success'));
 
