@@ -60,7 +60,7 @@ tabs:
                 condition: 'value[confirmado]'
             type: text
             comment: 'Formato: YYYY-MM-DD'
-            tab: 'Datos de Activción'
+            tab: 'Datos de Activación'
         fecha_fin:
             label: 'Fecha de Culminación'
             span: right
@@ -72,4 +72,4 @@ tabs:
                 condition: 'value[confirmado]'
             type: text
             comment: 'Formato: YYYY-MM-DD'
-            tab: 'Datos de Activción'
+            tab: 'Datos de Activación'
