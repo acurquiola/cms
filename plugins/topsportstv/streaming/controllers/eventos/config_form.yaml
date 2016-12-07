@@ -1,0 +1,10 @@
+name: Eventos
+form: $/topsportstv/streaming/models/evento/fields.yaml
+modelClass: Topsportstv\Streaming\Models\Evento
+defaultRedirect: topsportstv/streaming/eventos
+create:
+    redirect: 'topsportstv/streaming/eventos/update/:id'
+    redirectClose: topsportstv/streaming/eventos
+update:
+    redirect: topsportstv/streaming/eventos
+    redirectClose: topsportstv/streaming/eventos

@@ -1,0 +1,4 @@
+title: Deportes
+modelClass: Topsportstv\Streaming\Models\Deporte
+toolbar:
+    buttons: reorder_toolbar

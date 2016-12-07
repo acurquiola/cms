@@ -1,0 +1,54 @@
+fields:
+    titulo:
+        label: Título
+        span: auto
+        oc.commentPosition: ''
+        placeholder: ''
+        type: text
+    deportes:
+        label: Deporte
+        oc.commentPosition: ''
+        nameFrom: descripcion
+        descriptionFrom: description
+        span: auto
+        type: relation
+    descripcion:
+        label: Descripción
+        size: small
+        oc.commentPosition: ''
+        span: full
+        type: textarea
+    inicio:
+        label: Inicio
+        oc.commentPosition: ''
+        mode: date
+        span: auto
+        type: datepicker
+    fin:
+        label: Fin
+        oc.commentPosition: ''
+        mode: date
+        span: auto
+        type: datepicker
+    status:
+        label: Estado
+        oc.commentPosition: ''
+        options:
+            activo: Activo
+            finalizado: Finalizado
+        span: auto
+        type: dropdown
+    enlace:
+        label: Enlace
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    publicado:
+        label: Publicar
+        span: auto
+        default: 1
+        type: switch
+    destacado:
+        label: Destacado
+        span: auto
+        type: switch

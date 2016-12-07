@@ -1,0 +1,21 @@
+columns:
+    titulo:
+        label: Título
+        type: text
+    inicio:
+        label: Inicio
+        type: date
+    fin:
+        label: Fin
+        type: date
+    deportes_id:
+        label: Deporte
+        type: number
+        select: descripcion
+        relation: deportes
+    publicado:
+        label: Publicado
+        type: switch
+    destacado:
+        label: Destacado
+        type: switch

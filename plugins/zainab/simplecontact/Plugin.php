@@ -5,6 +5,8 @@ use Backend;
 use Zainab\SimpleContact\Controllers\SimpleContact;
 class Plugin extends PluginBase
 {
+   
+    
     public function pluginDetails()
     {
         return [
